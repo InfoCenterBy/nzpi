@@ -1,0 +1,12 @@
+@layer base{
+     .full-container{
+          width: 100%;
+     }
+     .main-container{
+          max-width: 1500px;
+     }
+     .row-container{
+          margin-left: -12px !important;
+          margin-right: -12px !important;
+     }
+}

@@ -1,0 +1,38 @@
+@layer base, vendor, component;
+//! imports
+@import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css') layer(vendor);
+@import './veriables/_variables.scss';
+@import './layers.scss';
+@import './ui.scss';
+@import './veriables/colors';
+//! end imports
+
+html{
+     height: auto;
+     scroll-behavior: smooth;
+     width: 100%;
+}
+html,
+body {
+	min-width: $minWidth;
+     width: 100%;
+}
+body{
+     font-size: $fontSize;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+}
+main{
+     flex-grow: 1;
+     width: 100%;
+     min-width: $minWidth;
+     display: flex;
+     flex-direction: column;
+}
+
+:root{
+     font-size: 16px;
+}
+
+
