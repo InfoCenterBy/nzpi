@@ -1,14 +1,18 @@
 <section class="full-container bg-green">
      <div class="header-top-btn main-container d-flex flex-row justify-content-between flex-wrap">
           <div class="d-flex flex-row flex-wrap justify-content-center">
-               <div class="lang-btn">РУС</div>
-               <div class="lang-btn">БЕЛ</div>
-               <div class="lang-btn">ENG</div>
+               <input type="radio" name="langBtn" id="langRus">
+               <label class="lang-btn" for="langRus">РУС</label>
+               <input type="radio" name="langBtn" id="langBel">
+               <label class="lang-btn" for="langBel">БЕЛ</label>
+               <input type="radio" name="langBtn" id="langEng">
+               <label class="lang-btn" for="langEng">ENG</label>
           </div>
-          <div>
-               <div class="vision-btn">
+          <div class="d-flex">
+               <button type="button" class="vision-btn">
+                    <i class="bi bi-eye"></i>
                     <span>Версия для слабовидящих</span>
-               </div>
+               </button>
           </div>
      </div>
 </section>

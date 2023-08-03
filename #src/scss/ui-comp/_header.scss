@@ -1,0 +1,114 @@
+@import '../functional/mixins';
+@import '../veriables/variables';
+.header-top-btn{
+     padding: .75rem 0;
+     input[type='radio']{
+          display: none;
+     }
+     color: var(--color-white);
+}
+
+.logo-block {
+     text-transform: uppercase;
+     line-height: normal;
+     img{
+          max-width: 212px;
+          width: 100%;
+     }
+     &__text {
+     }
+
+     &__title {
+          color: var(--color-black);
+          @include adaptiv-value('font-size', 24, 10, 1);
+          font-weight: 700;
+          font-family: $font-Cuprum;
+          word-break: normal;
+          width: fit-content;
+     }
+
+     &__sub {
+          color: var(--color-dark-gray);
+          @include adaptiv-value('font-size', 16, 10, 1);
+          font-weight: 400;
+          margin-top: .75rem;
+     }
+}
+
+.header-info {
+
+     &__search {
+          padding: .5rem .75rem;
+          border: 1px solid var(--color-light-gray);
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          input{
+               border: none;
+               font-family: $font-Rubik;
+               font-size: .875rem;
+               line-height: 150%;
+               font-weight: 400;
+               &:focus-visible{
+                    outline: none;
+               }
+               width: 100%;
+          }
+          .bi{
+               font-size: 1.25rem;
+               line-height: 1.25rem;
+               color: var(--color-green);
+               margin-bottom: .125rem;
+          }
+     }
+
+     &__full {
+     }
+
+     &__link {
+          display: flex;
+          flex-direction: row;
+          font-size: 1rem;
+          &:last-child{
+               margin-top: .75rem;
+          }
+          @media #{$ui-tablet} {
+               margin-top: .75rem;
+          }
+          a{
+               margin-left: 1rem;
+               color: var(--color-black);
+               text-decoration: none;
+               transition: $transition-3;
+          }
+          .bi{
+               color: var(--color-green);
+          }
+          @media #{$mouse-device} {
+               &:hover{
+                    a{
+                         color: var(--color-green);
+                    }
+               }
+          }
+     }
+
+     &__icon {
+          &:not(:first-child){
+               margin-left: .75rem;
+          }
+          svg{
+               path{
+                    fill: var(--color-green);
+               }
+          }
+          @media #{$mouse-device} {
+               &:hover{
+                    path{
+                         fill: var(--color-dark-green);
+                    }
+               }
+          }
+     }
+}

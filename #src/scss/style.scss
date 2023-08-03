@@ -2,9 +2,11 @@
 //! imports
 @import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css') layer(vendor);
 @import './veriables/_variables.scss';
+@import './functional/mixins';
 @import './layers.scss';
 @import './ui.scss';
 @import './veriables/colors';
+@import './ui-comp/buttons';
 //! end imports
 
 html{
@@ -29,6 +31,7 @@ main{
      min-width: $minWidth;
      display: flex;
      flex-direction: column;
+     font-family: $font-Rubik;
 }
 
 :root{
