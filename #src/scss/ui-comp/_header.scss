@@ -1,7 +1,8 @@
 @import '../functional/mixins';
 @import '../veriables/variables';
 .header-top-btn{
-     padding: .75rem 0;
+     padding-top: .75rem;
+     padding-bottom: .75rem;
      input[type='radio']{
           display: none;
      }
@@ -36,32 +37,6 @@
 }
 
 .header-info {
-
-     &__search {
-          padding: .5rem .75rem;
-          border: 1px solid var(--color-light-gray);
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          input{
-               border: none;
-               font-family: $font-Rubik;
-               font-size: .875rem;
-               line-height: 150%;
-               font-weight: 400;
-               &:focus-visible{
-                    outline: none;
-               }
-               width: 100%;
-          }
-          .bi{
-               font-size: 1.25rem;
-               line-height: 1.25rem;
-               color: var(--color-green);
-               margin-bottom: .125rem;
-          }
-     }
 
      &__full {
      }
@@ -110,5 +85,31 @@
                     }
                }
           }
+     }
+}
+
+.info-search {
+     padding: .5rem .75rem;
+     border: 1px solid var(--color-light-gray);
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     input{
+          border: none;
+          font-family: $font-Rubik;
+          font-size: .875rem;
+          line-height: 150%;
+          font-weight: 400;
+          &:focus-visible{
+               outline: none;
+          }
+          width: 100%;
+     }
+     .bi{
+          font-size: 1.25rem;
+          line-height: 1.25rem;
+          color: var(--color-green);
+          margin-bottom: .125rem;
      }
 }
