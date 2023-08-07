@@ -10,7 +10,6 @@
 }
 
 .logo-block {
-     text-transform: uppercase;
      line-height: normal;
      img{
           max-width: 212px;
@@ -26,6 +25,7 @@
           font-family: $font-Cuprum;
           word-break: normal;
           width: fit-content;
+          text-transform: uppercase;
      }
 
      &__sub {
@@ -97,19 +97,22 @@
      align-items: center;
      input{
           border: none;
-          font-family: $font-Rubik;
-          font-size: .875rem;
-          line-height: 150%;
-          font-weight: 400;
           &:focus-visible{
                outline: none;
           }
           width: 100%;
      }
+     input, ::placeholder{
+          font-family: $font-Rubik;
+          font-size: .875rem;
+          line-height: 150%;
+          font-weight: 400;
+     }
      .bi{
           font-size: 1.25rem;
           line-height: 1.25rem;
           color: var(--color-green);
-          margin-bottom: .125rem;
      }
 }
+
+@import './_nav-desk.scss';

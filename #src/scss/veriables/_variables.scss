@@ -38,6 +38,8 @@ $maxWidthContainer: 1500;
 $font-Cuprum: 'Cuprum', sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 $font-Rubik: 'Rubik', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Inter');
+$font-Inter: 'Inter', sans-serif;
 // $font-family: 'CuprumFFU', sans-serif;
 $fontSize: 16px;
 // *!------*
@@ -59,6 +61,7 @@ $ui-mobile: 'screen and (max-width: 650px)';
 $ui-tablet: 'screen and (max-width: 910px)';
 
 // *! z-indexs* 
+$layer-back: -1;
 $layer-base: 2;
 $layer-ui: 3; //header, footer, menu
 $layer-modal: 4;

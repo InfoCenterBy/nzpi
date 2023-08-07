@@ -1,0 +1,110 @@
+@import '../layers.scss';
+.main-nav{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.nav-modal{
+     display: grid;
+     place-items:  center;
+     cursor: pointer;
+     color: var(--color-green);
+     .bi{
+          @include adaptiv-value('font-size', 35, 31, 1);
+     }
+}
+
+.nav-hr{
+     margin: -1px 0;
+     z-index: $layer-base;
+}
+
+.nav-toggle {
+	& > a{
+          color: var(--color-green);
+          font-weight: 600;
+          line-height: normal;
+          font-family: $font-Rubik;
+          transition: $transition-3;
+          @include adaptiv-value('font-size', 18, 14, 1);
+     }
+	display: block;
+     background-color: transparent;
+	padding: 1rem .625rem ;
+     transition: $transition-3;
+     text-transform: uppercase;
+     border: 1px solid transparent;
+}
+
+.nav-toggle:hover {
+	border-bottom: 1px solid var(--color-green);
+	cursor: pointer;
+}
+
+.nav-dropdown .nav-toggle .dropdown-content-wrapper {
+	visibility: hidden;
+     opacity: 0;
+	position: absolute;
+     transition: $transition-3;
+	left: 0;
+     // display: none;
+     width: 100%;
+     z-index: $layer-back;
+     background-color: transparent;
+     .dropdown-content{
+	     background: var(--color-white-background);
+          margin-top: 2rem;
+          padding-top: 1rem;
+          width: 100%;
+     }
+}
+
+.dropdown-content{
+     font-family: $font-Inter;
+}
+
+@layer base{
+     .dropdown-content{
+          a{
+               @include adaptiv-value('font-size', 14, 12, 1);
+               color: var(--color-black);
+               line-height: 171%;
+               font-weight: 400;
+               text-transform: capitalize;
+               transition: $transition-3;
+               &:not(:first-child){
+                    margin: 13px 0;
+               }
+               &:hover{
+                    color: var(--color-green);
+               }
+          }
+     }
+}
+
+@layer component{
+     .dropdown-content{
+          &__title{
+               @include adaptiv-value('font-size', 16, 14, 1);
+               line-height: 150%;
+               color: var(--color-green);
+               font-weight: 600;
+          }
+     }
+}
+
+.nav-dropdown .nav-toggle:hover > .dropdown-content-wrapper ,
+.nav-dropdown .nav-toggle .dropdown-content-wrapper:hover {
+     visibility: visible;
+     opacity: 1;
+     z-index: $layer-ui;
+     // display: block;
+}
+
+.nav-border{
+     border-left: 1px solid var(--color-light-gray);
+}
+
+@import './nav-modal';

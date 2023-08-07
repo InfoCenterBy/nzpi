@@ -1,0 +1,12 @@
+@layer component{
+     #navModal{
+          .modal-header{
+               // background-color: red;
+               align-items: center;
+               .btn-close{
+                    font-size: 28px;
+                    line-height: 28px;
+               }
+          }
+     }
+}
