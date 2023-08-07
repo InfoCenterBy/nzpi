@@ -1,0 +1,54 @@
+@import url("https://fonts.cdnfonts.com/css/cuprum");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Inter");
+:root {
+  --color-black: #333333;
+  --color-white-background: #FEFEFE;
+  --color-green: #198754;
+  --color-dark-green: #12663F;
+  --color-darkest-green: #455D58;
+  --color-white-green: #CDDFDA;
+  --color-darkest-gray: #4F4F4F;
+  --color-dark-gray: #828282;
+  --color-medium-gray: #B8B8B8;
+  --color-light-gray: #E0E0E0;
+  --color-lightest-gray: #F2F2F2;
+  --color-white: #F8F7F7;
+}
+
+@layer base {
+  .full-container {
+    width: 100%;
+    padding: 0 12px;
+  }
+  .main-container {
+    margin: 0 auto;
+    max-width: 1500px;
+  }
+}
+@layer component {
+  .row-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1500px;
+    }
+  }
+  @media (max-width: 992px) {
+    .container {
+      max-width: 1100px;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      max-width: 900px;
+    }
+  }
+  @media (max-width: 576px) {
+    .container {
+      max-width: 700px;
+    }
+  }
+}
