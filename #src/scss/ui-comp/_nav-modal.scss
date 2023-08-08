@@ -8,5 +8,32 @@
                     line-height: 28px;
                }
           }
+          .modal-fullscreen .modal-content{
+               height: auto;
+          }
+          .modal-footer{
+               padding: 0;
+          }
+     }
+}
+
+.nav-modal-links{
+     a{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          color: var(--color-darkest-gray);
+          font-family: $font-Rubik;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: normal;
+          transition: $transition-3;
+          margin: .75rem 0;
+          @media #{$mouse-device} {
+               &:hover{
+                    color: var(--color-green);
+               }
+          }
      }
 }
