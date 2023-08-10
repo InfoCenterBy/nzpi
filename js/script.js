@@ -21,3 +21,9 @@ if (visionBtn) {
           visionBtn.querySelector('i').classList.toggle('bi-eye-slash');
      });
 }
+
+$('.burger, .overlay').click(function () {
+     $('.burger').toggleClass('show');
+     $('.overlay').toggleClass('show');
+     $('nav.mobile-menu').toggleClass('show');
+});
