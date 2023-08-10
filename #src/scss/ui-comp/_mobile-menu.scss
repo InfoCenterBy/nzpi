@@ -1,0 +1,160 @@
+@import '../functional/burger.scss';
+
+.mobile-header-btn{
+     display: none;
+     @media #{$ui-tablet} {
+          display: flex;
+     }
+     flex-direction: row;
+}
+.burger {
+     width: 50px;
+     height: 50px;
+     border-radius: 4px;
+     z-index: 10;
+     display: grid;
+     place-items: center;
+     span {
+          @include burger(30px, 2px, 6px, var(--color-green));
+     }
+     @media #{$ui-tablet} {
+          display: grid;
+     }
+     &.show {
+     span {
+     @include burger-to-cross;
+          &:before, &:after {
+                    background-color: var(--color-green);
+               }
+          }
+     }
+     &:hover {
+          cursor: pointer;
+     }
+}
+
+nav.mobile-menu {
+     background-color: var(--color-white-background);
+     position: fixed;
+     z-index: $layer-modal;
+     top: 0;
+     right: 0;
+     margin-top: 250px;
+     height: 100%;
+     max-width: 19.625rem;
+     width: 100%;
+     padding: 2.25rem .75rem 2.25rem 1.125rem;
+     overflow-y: auto;
+     @include transform(translateX(100%));
+     @include transition(transform .55s cubic-bezier(0.785, 0.135, 0.15, 0.86));
+     @layer component{
+          hr{
+               margin: 0;
+          }
+     }
+     &.show {
+          // @media #{$ui-tablet} {
+               @include transform(translateX(0px));
+          // }
+          ul.mobile-list {
+               li {
+                    @include transform(translateX(0px));
+                    opacity: 1;
+                    @for $i from 1 to 10 { 
+                         &:nth-child(#{$i}) {
+                                   transition-delay: $i * 0.15s;
+                              }
+                         }
+               }
+               .collapse{
+               }
+               .collapse.show{
+                    display: flex;
+                    flex-direction: column;
+                    a{
+                         color: var(--color-dark-green);
+                         white-space: nowrap;
+                         .bi{
+                              font-size: 1rem;
+                              color: var(--color-dark-green);
+                         }
+                    }
+               }
+          }
+          hr{
+               border-top: 1px solid var(--color-dark-green);
+          }
+     }
+
+     ul.mobile-list {
+          list-style-type: none;
+          padding-left: 0;
+          li {
+               @include transform(translateX(40px));
+               opacity: 0;
+               @include transition(all .3s ease);
+               margin-bottom: 1.5rem;
+               &:last-of-type {
+                    // margin-bottom: 0px;
+               }
+               .bi{
+                    color: var(--color-dark-green);
+                    transition: $transition-3;
+               }
+               .bi::before{
+                    transition: $transition-3;
+                    color: var(--color-dark-green);
+               }
+               a {
+                    color: var(--color-dark-green);
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 1rem;
+                    line-height: 1.125rem;
+                    display: block;
+                    font-weight: 500;
+                    @include transition(all .3s ease);
+                    &:hover {
+                         @media #{$mouse-device} {
+                              
+                         }
+                    }
+               }
+               a[aria-expanded="true"]{
+                    .bi::before{
+                         transform: rotate(180deg);
+                    }
+               }
+          }
+     }
+     .bi-facebook{
+          color: var(--color-dark-green);
+          font-size: 1.875rem;
+     }
+}
+body{
+     scrollbar-gutter: stable;
+}
+body:has(.overlay.show){
+     overflow: hidden;
+     scrollbar-gutter: stable !important;
+}
+.overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: $layer-base;
+     width: 100%;
+     height:100%;
+     @include transition(all 0.3s ease-in-out);
+     background-color: var(--color-darkest-gray);
+     opacity: 0;
+     visibility: hidden;
+     scrollbar-gutter: stable;
+     &.show {
+          @media #{$ui-tablet} {
+               opacity: 0.8;
+               visibility: visible;
+          }
+     }
+}

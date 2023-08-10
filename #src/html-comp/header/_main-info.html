@@ -1,6 +1,6 @@
-<section class="container mt-2">
+<section class="container mt-2 bg-white">
      <div class="row justify-content-between">
-          <div class="logo-block col-md-5 d-flex flex-row align-items-center justify-content-center">
+          <div class="logo-block col-xl-5 col-6 d-flex flex-row align-items-center justify-content-center">
                <img src="./img/png/nzpi-logo.png" alt="logo">
                <div class="logo-block__text d-flex flex-column ms-md-4 ms-1">
                     <div class="logo-block__title">
@@ -11,12 +11,12 @@
                     </div>
                </div>
           </div>
-          <div class="header-info col-md-5 d-flex flex-column align-items-end justify-content-center">
+          <div class="header-info col-xl-5 col-6 d-flex flex-column align-items-end justify-content-center">
                <div class="info-search w-100">
                     <input type="text" placeholder="Поиск по сайту">
                     <i class="bi bi-search"></i>
                </div>
-               <div class="header-info__full d-flex flex-md-row flex-column flex-wrap justify-content-between w-100 mt-md-4 mt-2">
+               <div class="header-info__full flex-md-row flex-column flex-wrap justify-content-between w-100 mt-md-4 mt-2">
                     <div class="d-flex flex-column">
                          <div class="header-info__link">
                               <i class="bi bi-telephone"></i>
@@ -73,6 +73,26 @@
                          </a>
                     </div>
                </div>
+               <div class="mobile-header-btn">
+                    <button class="mobile-header-btn__search" data-bs-toggle="modal" data-bs-target="#searchModal" type="button"><i class="bi bi-search"></i></button>
+                    <div class="burger">
+                         <span></span>
+                    </div>
+               </div>
           </div>
+          
      </div>
 </section>
+<div class="modal fade modal-search" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+     <div class="modal-dialog d-flex justify-content-center">
+          <div class="modal-content px-0">
+               <div class="modal-header search-header py-0">
+                    <div class="d-flex flex-column flex-md-row justify-content-between w-100 px-4  py-3">
+                         <input type="text" name="" id="" class="search-header__input w-100 pe-2 my-2" placeholder="Начните писать">
+                         <a class="search-btn my-2" href="./search.html">Поиск</a>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+          </div>
+     </div>
+</div>

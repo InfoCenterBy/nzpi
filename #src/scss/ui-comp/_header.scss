@@ -14,6 +14,9 @@
      img{
           max-width: 212px;
           width: 100%;
+          @media #{$ui-tablet} {
+               max-width: 50%;
+          }
      }
      &__text {
      }
@@ -33,12 +36,19 @@
           @include adaptiv-value('font-size', 16, 10, 1);
           font-weight: 400;
           margin-top: .75rem;
+          @media #{$ui-tablet} {
+               display: none;
+          }
      }
 }
 
 .header-info {
 
      &__full {
+          display: flex;
+          @media #{$ui-tablet} {
+               display: none;
+          }
      }
 
      &__link {
@@ -85,6 +95,12 @@
                     }
                }
           }
+     }
+}
+
+.header-info{
+     .info-search{
+          display: none;
      }
 }
 

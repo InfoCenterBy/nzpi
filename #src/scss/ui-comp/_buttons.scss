@@ -30,5 +30,8 @@ input[type='radio']:checked + label.lang-btn{
      font-family: $font-Rubik;
      span{
           margin: 0 0 0 12px;
+          @media #{$ui-tablet} {
+               display: none;
+          }
      }
 }
