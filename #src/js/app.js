@@ -27,3 +27,14 @@ $('.burger, .overlay').click(function () {
      $('.overlay').toggleClass('show');
      $('nav.mobile-menu').toggleClass('show');
 });
+
+//adaptive margin
+const topHeader = document.querySelector('#topHeader');
+const mobMenu = document.querySelector('nav.mobile-menu');
+
+function calcBlockMargin() {
+     mobMenu.style.marginTop = new Number(topHeader.offsetHeight) + 55 + 'px';
+}
+
+window.addEventListener('load', calcBlockMargin);
+window.addEventListener('resize', calcBlockMargin);

@@ -39,3 +39,7 @@ main{
 :root{
      font-size: 16px;
 }
+
+.z-3{
+     z-index: $layer-ui;
+}

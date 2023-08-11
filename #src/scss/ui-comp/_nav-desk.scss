@@ -6,6 +6,12 @@
      flex-wrap: wrap;
 }
 
+@media #{$ui-tablet} {
+     .main-nav, .nav-hr{
+          display: none;
+     }
+}
+
 .nav-modal{
      display: grid;
      place-items:  center;

@@ -6,6 +6,13 @@
           display: flex;
      }
      flex-direction: row;
+     &__search{
+          border: none;
+          background-color: transparent;
+          font-size: 22px;
+          padding: 0;
+          color: var(--color-dark-gray);
+     }
 }
 .burger {
      width: 50px;
@@ -15,17 +22,17 @@
      display: grid;
      place-items: center;
      span {
-          @include burger(30px, 2px, 6px, var(--color-green));
+          @include burger(30px, 2px, 6px, var(--color-dark-gray));
      }
      @media #{$ui-tablet} {
           display: grid;
      }
      &.show {
-     span {
-     @include burger-to-cross;
-          &:before, &:after {
-                    background-color: var(--color-green);
-               }
+          span {
+               @include burger-to-cross;
+               &:before, &:after {
+                         background-color: var(--color-dark-gray);
+                    }
           }
      }
      &:hover {
@@ -39,12 +46,12 @@ nav.mobile-menu {
      z-index: $layer-modal;
      top: 0;
      right: 0;
-     margin-top: 250px;
-     height: 100%;
-     max-width: 19.625rem;
+     margin-top: 155px;
+     min-height: 100%;
+     max-width: 65%;
      width: 100%;
-     padding: 2.25rem .75rem 2.25rem 1.125rem;
-     overflow-y: auto;
+     padding: 2.25rem 1.125rem;
+     overflow-y: visible;
      @include transform(translateX(100%));
      @include transition(transform .55s cubic-bezier(0.785, 0.135, 0.15, 0.86));
      @layer component{
@@ -53,14 +60,14 @@ nav.mobile-menu {
           }
      }
      &.show {
-          // @media #{$ui-tablet} {
+          @media #{$ui-tablet} {
                @include transform(translateX(0px));
-          // }
+          }
           ul.mobile-list {
                li {
                     @include transform(translateX(0px));
                     opacity: 1;
-                    @for $i from 1 to 10 { 
+                    @for $i from 1 to 20 { 
                          &:nth-child(#{$i}) {
                                    transition-delay: $i * 0.15s;
                               }
@@ -93,7 +100,7 @@ nav.mobile-menu {
                @include transform(translateX(40px));
                opacity: 0;
                @include transition(all .3s ease);
-               margin-bottom: 1.5rem;
+               margin-bottom: 1rem;
                &:last-of-type {
                     // margin-bottom: 0px;
                }

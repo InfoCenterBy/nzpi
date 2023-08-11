@@ -7,6 +7,9 @@
           display: none;
      }
      color: var(--color-white);
+     @media #{$ui-tablet} {
+          height: 55px;
+     }
 }
 
 .logo-block {
@@ -15,7 +18,7 @@
           max-width: 212px;
           width: 100%;
           @media #{$ui-tablet} {
-               max-width: 50%;
+               max-width: 30%;
           }
      }
      &__text {
@@ -51,34 +54,6 @@
           }
      }
 
-     &__link {
-          display: flex;
-          flex-direction: row;
-          font-size: 1rem;
-          &:last-child{
-               margin-top: .75rem;
-          }
-          @media #{$ui-tablet} {
-               margin-top: .75rem;
-          }
-          a{
-               margin-left: 1rem;
-               color: var(--color-black);
-               text-decoration: none;
-               transition: $transition-3;
-          }
-          .bi{
-               color: var(--color-green);
-          }
-          @media #{$mouse-device} {
-               &:hover{
-                    a{
-                         color: var(--color-green);
-                    }
-               }
-          }
-     }
-
      &__icon {
           &:not(:first-child){
                margin-left: .75rem;
@@ -93,6 +68,34 @@
                     path{
                          fill: var(--color-dark-green);
                     }
+               }
+          }
+     }
+}
+
+.info-link {
+     display: flex;
+     flex-direction: row;
+     font-size: 1rem;
+     &:last-child{
+          margin-top: .75rem;
+     }
+     @media #{$ui-tablet} {
+          margin-top: .75rem;
+     }
+     a{
+          margin-left: 1rem;
+          color: var(--color-black);
+          text-decoration: none;
+          transition: $transition-3;
+     }
+     .bi{
+          color: var(--color-green);
+     }
+     @media #{$mouse-device} {
+          &:hover{
+               a{
+                    color: var(--color-green);
                }
           }
      }
