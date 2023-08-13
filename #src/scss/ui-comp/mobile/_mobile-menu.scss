@@ -1,4 +1,4 @@
-@import '../functional/burger.scss';
+@import '../../functional/burger.scss';
 
 .mobile-header-btn{
      display: none;
@@ -165,3 +165,6 @@ body:has(.overlay.show){
           }
      }
 }
+
+
+@import './mobile-accordion';
