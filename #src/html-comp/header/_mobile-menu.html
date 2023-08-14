@@ -1,31 +1,36 @@
 <nav class="mobile-menu">
-     <ul class="mobile-list">
+     <div class="mobile-list">
           <div class="accordion" id="accordionMobile">
-               <div class="accordion-item">
+               <div class="accordion-item mobile-list__item">
                     <h2 class="accordion-header">
-                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                               О центре
                          </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionMobile">
-                         <div class="accordion-body">
-                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                         <div class="accordion-body d-flex flex-column link-list">
+                              <a href="#" target="_blank">Правовой статус</a>
+                              <a href="#" target="_blank">Руководство и структурные подразделения</a>
+                              <a href="#" target="_blank">История Центра</a>
+                              <a href="#" target="_blank">Презентация и гимн Центра</a>
+                              <a href="#" target="_blank">Профсоюз</a>
+                              <a href="#" target="_blank">Вакансии</a>
                          </div>
                     </div>
                </div>
-               <div class="accordion-item">
+               <div class="accordion-item mobile-list__item">
                     <h2 class="accordion-header">
-                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         <button class="accordion-button accordion-button-empty collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                               Новости
                          </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
+                    <!-- <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
                          <div class="accordion-body">
                               <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                          </div>
-                    </div>
+                    </div> -->
                </div>
-               <div class="accordion-item">
+               <div class="accordion-item mobile-list__item">
                     <h2 class="accordion-header">
                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                               Деятельность
@@ -33,66 +38,88 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
                          <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                              <div class="accordion-body d-flex flex-column link-list">
+                                   <a><strong>Нормотворческая деятельность</strong></a>
+                                   <a href="#" target="_blank">Правовое обеспечение нормотворческой деятельности</a>
+                                   <a href="#" target="_blank">Планирование нормотворческой деятельности</a>
+                                   <a href="#" target="_blank">Подготовка проектов нормативных правовых актов</a>
+                                   <a href="#" target="_blank">Экспертиза в нормотворческом процессе</a>
+                                   <a><strong>Научная деятельность</strong></a>
+                                   <a href="#" target="_blank">Научно-исследовательская работа Института правовых исследований</a>
+                                   <a href="#" target="_blank">Совет по защите диссертаций</a>
+                                   <a href="#" target="_blank">Учёный совет</a>
+                                   <a href="#" target="_blank">Аспирантура</a>
+                                   <a href="#" target="_blank">Наши издания</a>
+                                   <a href="#" target="_blank">Конференции, семинары, круглые столы</a>
+                              </div>
                          </div>
                     </div>
                </div>
-               <div class="accordion-item">
+               <div class="accordion-item mobile-list__item">
                     <h2 class="accordion-header">
-                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                         <button class="accordion-button accordion-button-empty collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
                               Правовой мониторинг
                          </button>
                     </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
+                    <!-- <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
                          <div class="accordion-body">
                               <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                          </div>
-                    </div>
+                    </div> -->
                </div>
-               <div class="accordion-item">
+               <div class="accordion-item mobile-list__item">
                     <h2 class="accordion-header">
                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
                               Обращения
                          </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
-                         <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                         <div class="accordion-body d-flex flex-column link-list">
+                              <a href="#" target="_blank">Порядок рассмотрения обращений граждан и юридических лиц</a>
+                              <a href="#" target="_blank">Личный приём</a>
+                              <a href="#" target="_blank">Прямая телефонная линия</a>
+                              <a href="#" target="_blank">Электронные обращения граждан и юридических лиц</a>
+                              <a href="#" target="_blank">Наименование и место нахождения вышестоящего органа</a>
                          </div>
                     </div>
                </div>
-               <div class="accordion-item">
+               <div class="accordion-item mobile-list__item">
                     <h2 class="accordion-header">
                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
                               Другое
                          </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
-                         <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                         <div class="accordion-body d-flex flex-column link-list">
+                              <a href="#" target="_blank">Международное сотрудничество</a>
+                              <a href="#" target="_blank">Фото</a>
+                              <a href="#" target="_blank">Видео</a>
+                              <a href="#" target="_blank">Семинары (раздел под вопросом)</a>
+                              <a href="#" target="_blank">Услуги</a>
+                              <a href="#" target="_blank">Правовое информирование</a>
+                              <a href="#" target="_blank">Контакты</a>
                          </div>
                     </div>
                </div>
+               <div class="d-flex flex-column">
+                    <div class="info-link">
+                         <i class="bi bi-geo-alt"></i>
+                         <a>г. Минск, ул. Берсона 1а</a>
+                    </div>
+                    <div class="info-link">
+                         <i class="bi bi-envelope"></i>
+                         <a href="mailto:center@pmrb.gov.by">center@pmrb.gov.by</a>
+                    </div>
+                    <div class="info-link">
+                         <i class="bi bi-telephone"></i>
+                         <a href="tel:8 (017) 200–12–25">8 (017) 200–12–25</a>
+                    </div>
+                    <div class="info-link">
+                         <i class="bi bi-printer"></i>
+                         <a href="tel:8 (017) 222–40–96">8 (017) 222–40–96</a>
+                    </div>
+               </div>
           </div>
-          <li>
-               О центре
-          </li>
-          <li><hr></li>
-          <li>Новости</li>
-          <li><hr></li>
-          <li>Деятельность</li>
-          <li><hr></li>
-          <li>Правовой мониторинг</li>
-          <li><hr></li>
-          <li>Обращения</li>
-          <li><hr></li>
-          <li>Другое</li>
-          <li><hr></li>
-          <li>
-               <a href="https://www.facebook.com/groups/1080010765442829/about/" target="_blank">
-                    <i class="bi bi-facebook"></i>
-               </a>
-          </li>
-     </ul>
+     </div>
 </nav>
 <div class="overlay"></div>

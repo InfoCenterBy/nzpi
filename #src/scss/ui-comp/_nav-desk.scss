@@ -88,6 +88,15 @@
 
 @layer base{
      .dropdown-content{
+          .link-list{
+               a{
+                    &:not(:first-child){
+                         margin: 13px 0;
+                    }
+               }
+          }
+     }
+     .link-list{
           a{
                @include adaptiv-value('font-size', 14, 12, 1);
                color: var(--color-black);
@@ -95,9 +104,6 @@
                font-weight: 400;
                text-transform: capitalize;
                transition: $transition-3;
-               &:not(:first-child){
-                    margin: 13px 0;
-               }
                @media #{$mouse-device} {
                     &:hover{
                          color: var(--color-green);
