@@ -770,6 +770,18 @@ body:has(.overlay.show) {
   }
 }
 
+.search-header .search-btn {
+  display: grid;
+  place-items: center;
+  background-color: var(--color-green);
+  color: var(--color-white);
+  border-radius: 2px;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.875rem;
+}
+
 @layer component {
   .accordion {
     --bs-accordion-border-width: 0;
