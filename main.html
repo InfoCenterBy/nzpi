@@ -55,22 +55,22 @@
                     <i class="bi bi-search"></i>
                </div>
                <div class="header-info__full flex-md-row flex-column flex-wrap justify-content-between w-100 mt-md-4 mt-2">
-                    <div class="d-flex flex-column">
-                         <div class="header-info__link">
+                    <div class="d-flex flex-column my-1">
+                         <div class="info-link">
                               <i class="bi bi-telephone"></i>
                               <a href="tel:8 (017) 200–12–25">8 (017) 200–12–25</a>
                          </div>
-                         <div class="header-info__link">
+                         <div class="info-link">
                               <i class="bi bi-printer"></i>
                               <a href="tel:8 (017) 222–40–96">8 (017) 222–40–96</a>
                          </div>
                     </div>
-                    <div class="d-flex flex-column">
-                         <div class="header-info__link">
+                    <div class="d-flex flex-column my-1">
+                         <div class="info-link">
                               <i class="bi bi-envelope"></i>
                               <a href="mailto:center@pmrb.gov.by">center@pmrb.gov.by</a>
                          </div>
-                         <div class="header-info__link">
+                         <div class="info-link">
                               <i class="bi bi-geo-alt"></i>
                               <a>г. Минск, ул. Берсона 1а</a>
                          </div>
@@ -142,7 +142,7 @@
           <div class="nav-toggle" id="">
                <a href="" target="_blank" class="nav-main-link">О центре</a>
                <div class="dropdown-content-wrapper">
-                    <div class="dropdown-content">
+                    <div class="dropdown-content link-list">
                          <div class="d-flex flex-row flex-wrap container justify-content-between px-md-4">
                               <div class="d-flex">
                                    <a href="" target="_blank" class="dropdown-content__title">О центре</a>
@@ -173,7 +173,7 @@
           <div class="nav-toggle" id="">
                <a href="" target="_blank" class="nav-main-link">деятельность</a>
                <div class="dropdown-content-wrapper">
-                    <div class="dropdown-content">
+                    <div class="dropdown-content link-list">
                          <div class="container">
                               <div class="row row-0 justify-content-between">
                                    <div class="col-md-6">
@@ -229,7 +229,7 @@
           <div class="nav-toggle" id="">
                <a href="" target="_blank" class="nav-main-link">обращения</a>
                <div class="dropdown-content-wrapper">
-                    <div class="dropdown-content">
+                    <div class="dropdown-content link-list">
                          <div class="d-flex flex-row flex-wrap justify-content-between container px-md-4">
                               <div class="d-flex">
                                    <a href="" target="_blank" class="dropdown-content__title">Обращения</a>
@@ -255,8 +255,8 @@
      <div class="modal-dialog modal-fullscreen">
           <div class="modal-content">
                <div class="container py-md-4 py-2">
-                    <div class="modal-header">
-                         <div class="logo-block col-md-5 d-flex flex-row align-items-center justify-content-center">
+                    <div class="modal-header row">
+                         <div class="logo-block col-lg-6 d-flex flex-row align-items-center justify-content-center my-2">
                               <img src="./img/png/nzpi-logo.png" alt="logo">
                               <div class="logo-block__text d-flex flex-column ms-md-4 ms-1">
                                    <div class="logo-block__title">
@@ -267,7 +267,7 @@
                                    </div>
                               </div>
                          </div>
-                         <div class="d-flex flex-row w-100 align-items-center">
+                         <div class="col-lg-6 d-flex flex-row align-items-center my-2">
                               <div class="info-search w-100">
                                    <input type="text" placeholder="Поиск по сайту">
                                    <i class="bi bi-search"></i>
@@ -399,27 +399,118 @@
 </div>
 <hr class="nav-hr">
      <nav class="mobile-menu">
-     <ul class="mobile-list">
-          <li>
-               О центре
-          </li>
-          <li><hr></li>
-          <li>Новости</li>
-          <li><hr></li>
-          <li>Деятельность</li>
-          <li><hr></li>
-          <li>Правовой мониторинг</li>
-          <li><hr></li>
-          <li>Обращения</li>
-          <li><hr></li>
-          <li>Другое</li>
-          <li><hr></li>
-          <li>
-               <a href="https://www.facebook.com/groups/1080010765442829/about/" target="_blank">
-                    <i class="bi bi-facebook"></i>
-               </a>
-          </li>
-     </ul>
+     <div class="mobile-list">
+          <div class="accordion" id="accordionMobile">
+               <div class="accordion-item mobile-list__item">
+                    <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              О центре
+                         </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionMobile">
+                         <div class="accordion-body d-flex flex-column link-list">
+                              <a href="#" target="_blank">Правовой статус</a>
+                              <a href="#" target="_blank">Руководство и структурные подразделения</a>
+                              <a href="#" target="_blank">История Центра</a>
+                              <a href="#" target="_blank">Презентация и гимн Центра</a>
+                              <a href="#" target="_blank">Профсоюз</a>
+                              <a href="#" target="_blank">Вакансии</a>
+                         </div>
+                    </div>
+               </div>
+               <div class="accordion-item mobile-list__item">
+                    <h2 class="accordion-header">
+                         <button class="accordion-button accordion-button-empty collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Новости
+                         </button>
+                    </h2>
+               </div>
+               <div class="accordion-item mobile-list__item">
+                    <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Деятельность
+                         </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
+                         <div class="accordion-body">
+                              <div class="accordion-body d-flex flex-column link-list">
+                                   <a><strong>Нормотворческая деятельность</strong></a>
+                                   <a href="#" target="_blank">Правовое обеспечение нормотворческой деятельности</a>
+                                   <a href="#" target="_blank">Планирование нормотворческой деятельности</a>
+                                   <a href="#" target="_blank">Подготовка проектов нормативных правовых актов</a>
+                                   <a href="#" target="_blank">Экспертиза в нормотворческом процессе</a>
+                                   <a><strong>Научная деятельность</strong></a>
+                                   <a href="#" target="_blank">Научно-исследовательская работа Института правовых исследований</a>
+                                   <a href="#" target="_blank">Совет по защите диссертаций</a>
+                                   <a href="#" target="_blank">Учёный совет</a>
+                                   <a href="#" target="_blank">Аспирантура</a>
+                                   <a href="#" target="_blank">Наши издания</a>
+                                   <a href="#" target="_blank">Конференции, семинары, круглые столы</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="accordion-item mobile-list__item">
+                    <h2 class="accordion-header">
+                         <button class="accordion-button accordion-button-empty collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                              Правовой мониторинг
+                         </button>
+                    </h2>
+               </div>
+               <div class="accordion-item mobile-list__item">
+                    <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                              Обращения
+                         </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
+                         <div class="accordion-body d-flex flex-column link-list">
+                              <a href="#" target="_blank">Порядок рассмотрения обращений граждан и юридических лиц</a>
+                              <a href="#" target="_blank">Личный приём</a>
+                              <a href="#" target="_blank">Прямая телефонная линия</a>
+                              <a href="#" target="_blank">Электронные обращения граждан и юридических лиц</a>
+                              <a href="#" target="_blank">Наименование и место нахождения вышестоящего органа</a>
+                         </div>
+                    </div>
+               </div>
+               <div class="accordion-item mobile-list__item">
+                    <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                              Другое
+                         </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
+                         <div class="accordion-body d-flex flex-column link-list">
+                              <a href="#" target="_blank">Международное сотрудничество</a>
+                              <a href="#" target="_blank">Фото</a>
+                              <a href="#" target="_blank">Видео</a>
+                              <a href="#" target="_blank">Семинары (раздел под вопросом)</a>
+                              <a href="#" target="_blank">Услуги</a>
+                              <a href="#" target="_blank">Правовое информирование</a>
+                              <a href="#" target="_blank">Контакты</a>
+                         </div>
+                    </div>
+               </div>
+               <div class="d-flex flex-column">
+                    <div class="info-link">
+                         <i class="bi bi-geo-alt"></i>
+                         <a>г. Минск, ул. Берсона 1а</a>
+                    </div>
+                    <div class="info-link">
+                         <i class="bi bi-envelope"></i>
+                         <a href="mailto:center@pmrb.gov.by">center@pmrb.gov.by</a>
+                    </div>
+                    <div class="info-link">
+                         <i class="bi bi-telephone"></i>
+                         <a href="tel:8 (017) 200–12–25">8 (017) 200–12–25</a>
+                    </div>
+                    <div class="info-link">
+                         <i class="bi bi-printer"></i>
+                         <a href="tel:8 (017) 222–40–96">8 (017) 222–40–96</a>
+                    </div>
+               </div>
+          </div>
+     </div>
 </nav>
 <div class="overlay"></div>
 </header>
