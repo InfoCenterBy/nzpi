@@ -9,7 +9,7 @@
      &__search{
           border: none;
           background-color: transparent;
-          font-size: 22px;
+          font-size: 1.375rem;
           padding: 0;
           color: var(--color-dark-gray);
      }
@@ -67,7 +67,7 @@ nav.mobile-menu {
                .mobile-list__item {
                     @include transform(translateX(0px));
                     opacity: 1;
-                    @for $i from 1 to 20 { 
+                    @for $i from 1 to 12 { 
                          &:nth-child(#{$i}) {
                                    transition-delay: $i * 0.15s;
                               }
@@ -78,7 +78,6 @@ nav.mobile-menu {
                .collapse.show{
                     display: flex;
                     flex-direction: column;
-                    
                }
           }
      }
@@ -96,10 +95,12 @@ nav.mobile-menu {
                @include transform(translateX(40px));
                opacity: 0;
                @include transition(all .3s ease);
+          }
+          .mobile-list__item.accordion-item{
                padding: .75rem 0;
                border-bottom: 1px solid var(--color-light-gray);
                &:last-of-type {
-                    border-bottom: none;
+                    border-bottom: 0;
                }
                .bi{
                     color: var(--color-dark-green);
@@ -110,10 +111,6 @@ nav.mobile-menu {
                     color: var(--color-dark-green);
                }
           }
-     }
-     .bi-facebook{
-          color: var(--color-dark-green);
-          font-size: 1.875rem;
      }
 }
 body{

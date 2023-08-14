@@ -134,13 +134,16 @@ a{
      }
 }
 
-@layer component{
-     @media #{$mouse-device} {
-          .btn-close:hover{
+
+@media #{$mouse-device} {
+     .btn-close:hover{
+          @layer component{
                color: var(--color-darkest-gray);
           }
      }
-     .btn-close:focus{
+}
+.btn-close:focus{
+     @layer component{
           box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-green) 25%, transparent 75%);
      }
 }
