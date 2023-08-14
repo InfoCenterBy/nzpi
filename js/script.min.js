@@ -31,9 +31,12 @@ $('.burger, .overlay').click(function () {
 //adaptive margin
 const topHeader = document.querySelector('#topHeader');
 const mobMenu = document.querySelector('nav.mobile-menu');
+const mobList = document.querySelector('nav.mobile-menu .mobile-list');
 
 function calcBlockMargin() {
-     mobMenu.style.marginTop = new Number(topHeader.offsetHeight) + 55 + 'px';
+     let numberHeight = new Number(topHeader.offsetHeight) + 55 + 'px';
+     mobMenu.style.marginTop = numberHeight;
+     mobList.style.paddingBottom = numberHeight;
 }
 
 window.addEventListener('load', calcBlockMargin);
