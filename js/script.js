@@ -36,15 +36,5 @@ function calcBlockMargin() {
      mobMenu.style.marginTop = new Number(topHeader.offsetHeight) + 55 + 'px';
 }
 
-function onResizeBlock() {
-     width = topHeader.offsetHeight;
-     newWidth = topHeader.offsetHeight;
-     if (newWidth != width) {
-          calcBlockMargin();
-          console.log(newWidth);
-     }
-}
-
 window.addEventListener('load', calcBlockMargin);
 window.addEventListener('resize', calcBlockMargin);
-window.addEventListener('resize', onResizeBlock);
