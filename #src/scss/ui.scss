@@ -88,10 +88,9 @@ a{
      }
      transition: $transition-3;
      picture{
-          margin-top: 2rem;
-          margin-bottom: 1.5rem;
      }
      @media #{$mouse-device} {
+          cursor: pointer;
           &:hover{
                &>div{
                     color: var(--color-green);
@@ -134,16 +133,60 @@ a{
      }
 }
 
-
-@media #{$mouse-device} {
-     .btn-close:hover{
-          @layer component{
+@layer component{
+     @media #{$mouse-device} {
+          .btn-close:hover{
                color: var(--color-darkest-gray);
           }
      }
 }
-.btn-close:focus{
-     @layer component{
+@layer component{
+     .btn-close:focus{
           box-shadow: 0 0 0 .25rem color-mix(in srgb, var(--color-green) 25%, transparent 75%);
      }
+}
+
+@import './ui-comp/footer';
+
+.breadcrumbs{
+     margin-bottom: 1.875rem;
+     margin-top: 3.75rem;
+     @media #{$ui-tablet} {
+          margin-top: 1.875rem;
+     }
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     font-family: $font-Rubik;
+     a{
+          color: var(--color-black);
+          font-size: .875rem;
+          line-height: normal;
+          font-weight: 400;
+          &:not(:last-child){
+               &::after{
+                    content: " /";
+               }
+          }
+          &::after{
+               margin-right: 4px;
+          }
+          &:last-child{
+               color: var(--color-dark-gray);
+          }
+     }
+}
+
+.content-title {
+     font-size: 2rem;
+     font-weight: 700;
+     line-height: normal;
+}
+.content-title,.content-text{
+     color: var(--color-black);
+}
+.content-text {
+     font-size: 1.125rem;
+     font-weight: 400;
+     line-height: 150%;
 }

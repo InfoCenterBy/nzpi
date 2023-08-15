@@ -53,7 +53,8 @@ let { src, dest } = require('gulp'),
      prettier = require('gulp-prettier'),
      purgecss = require('gulp-purgecss'),
      strip = require('gulp-strip-comments'),
-     ignoreErrors = require('gulp-ignore-errors');
+     ignoreErrors = require('gulp-ignore-errors'),
+     csso = require('gulp-csso');
 
 function browserSync(done) {
      browsersync.init({
@@ -81,7 +82,8 @@ function css() {
                          outputStyle: 'expanded',
                     })
                )
-               // .pipe(prettier({ singleQuote: true, }))
+               .pipe(prettier({ singleQuote: true }))
+               .pipe(csso())
                //  .pipe(group_media())
                .pipe(
                     autoprefixer({
