@@ -372,6 +372,9 @@ layer(vendor);
       -ms-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
 }
+.nav-toggle .dropdown-content a {
+  text-transform: none;
+}
 
 @media (hover: hover) and (pointer: fine) {
   .nav-toggle:hover {
@@ -401,10 +404,18 @@ layer(vendor);
 }
 
 @layer base {
-  .dropdown-content .link-list a:not(:first-child) {
-    margin: 13px 0;
+  .link-list a:not(:first-child),
+  .side-nav #accordionNavSub .accordion-header a:not(:first-child) {
+    margin: 0.5rem 0;
   }
-  .link-list a {
+  .link-list a:first-child,
+  .side-nav #accordionNavSub .accordion-header a:first-child {
+    margin-bottom: 0.5rem;
+  }
+}
+@layer component {
+  .link-list a,
+  .side-nav #accordionNavSub .accordion-header a {
     font-size: 14px;
     color: var(--color-black);
     line-height: 171%;
@@ -413,17 +424,17 @@ layer(vendor);
     transition: all ease-out 0.3s;
   }
   @media (max-width: 1500px) {
-    .link-list a {
+    .link-list a,
+    .side-nav #accordionNavSub .accordion-header a {
       font-size: calc(12px + 2 * ((100vw - 320px) / 1180));
     }
   }
   @media (hover: hover) and (pointer: fine) {
-    .link-list a:hover {
+    .link-list a:hover,
+    .side-nav #accordionNavSub .accordion-header a:hover {
       color: var(--color-green);
     }
   }
-}
-@layer component {
   .dropdown-content__title {
     font-size: 16px;
     line-height: 150%;
@@ -789,9 +800,6 @@ body:has(.overlay.show) {
   .mobile-menu .accordion-body a:not(:first-child) {
     margin-top: 0.5rem;
   }
-  .mobile-menu .accordion-button-empty::after {
-    display: none;
-  }
 }
 a {
   text-decoration: none;
@@ -965,7 +973,13 @@ a {
   }
 }
 .footer {
+  margin-top: 5.25rem;
   padding: 3.625rem 0 4rem 0;
+}
+@media screen and (max-width: 910px) {
+  .footer {
+    margin-top: 2rem;
+  }
 }
 @media screen and (max-width: 910px) {
   .footer {
@@ -1049,6 +1063,84 @@ a {
   }
   .accordion-button:not(.collapsed)::after {
     background-image: var(--bs-accordion-btn-icon);
+  }
+  .accordion-button-empty::after {
+    display: none;
+  }
+}
+@layer component {
+  .side-nav .accordion-body {
+    padding: 0;
+  }
+  .side-nav .accordion-button:not(.collapsed) {
+    color: var(--color-green);
+  }
+  .side-nav .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .side-nav #sideNav {
+    padding-left: 1.375rem;
+    border-left: 1px solid var(--color-light-gray);
+  }
+  .side-nav .nav-title .accordion-button {
+    padding: 0.75rem 0;
+    color: var(--color-green);
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .side-nav .accordion-button {
+    color: var(--color-darkest-gray);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 150%;
+    -webkit-transition: all ease-out 0.3s;
+    transition: all ease-out 0.3s;
+  }
+  @media (hover: hover) and (pointer: fine) {
+    .side-nav .accordion-button:hover {
+      color: var(--color-green);
+    }
+  }
+  .side-nav .accordion-item:not(:first-of-type) {
+    margin-top: 1.375rem;
+  }
+  .side-nav .accordion-item:nth-of-type(2) {
+    margin-top: 0.625rem;
+  }
+  .side-nav .accordion-item:last-of-type {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .side-nav .side-nav-active {
+    position: relative;
+  }
+  .side-nav .side-nav-active .accordion-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-green);
+    left: -24px;
+  }
+  .side-nav #accordionNavSub .side-nav-active .accordion-button::before {
+    left: -32px;
+  }
+  .side-nav #accordionNavSub .accordion-button:not(.collapsed) {
+    color: var(--color-green);
+  }
+  .side-nav .accordion-collapse {
+    margin-top: 1rem;
+  }
+  .side-nav #accordionNavSub .accordion-header {
+    margin-bottom: 1rem;
+  }
+  .side-nav #accordionNavSub .accordion-header:first-of-type {
+    margin-top: 0.5rem;
   }
 }
 @layer component {
