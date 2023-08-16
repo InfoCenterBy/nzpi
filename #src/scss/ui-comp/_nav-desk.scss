@@ -55,6 +55,11 @@
           transition: transform 250ms ease-in-out;
           transform-origin: 100% 50%;
      }
+     .dropdown-content{
+          a{
+               text-transform: none;
+          }
+     }
 }
 
 @media #{$mouse-device} {
@@ -87,15 +92,19 @@
 }
 
 @layer base{
-     .dropdown-content{
-          .link-list{
-               a{
-                    &:not(:first-child){
-                         margin: 13px 0;
-                    }
+     .link-list{
+          a{
+               &:not(:first-child){
+                    margin: .5rem 0;
+               }
+               &:first-child{
+                    margin-bottom: .5rem;
                }
           }
      }
+}
+
+@layer component{
      .link-list{
           a{
                @include adaptiv-value('font-size', 14, 12, 1);
@@ -110,9 +119,6 @@
                }
           }
      }
-}
-
-@layer component{
      .dropdown-content{
           &__title{
                @include adaptiv-value('font-size', 16, 14, 1);

@@ -1,36 +1,21 @@
 @layer component{
     .mobile-menu{
-        .accordion{
-            --bs-accordion-border-width: 0;
-        }
         .accordion-button:not(.collapsed) {
             color: var(--color-green);
             background-color: transparent;
             box-shadow: 0;
-        }
-        .accordion-button:focus {
-            border: 0;
-            border-color: transparent;
-            box-shadow: none;
         }
         .accordion-item:first-of-type .accordion-button {
             border-top-left-radius: 0;
             border-top-right-radius: 0;
         }
         .accordion-button {
-            padding: 0;
             @include adaptiv-value('font-size', 18, 16, 1);
             color: var(--color-black);
-            text-align: left;
-            background-color: transparent;
-            transition: $transition-3;
-            font-weight: 500;
             text-transform: uppercase;
         }
         .accordion-item {
             color: var(--color-back);
-            background-color: transparent;
-            border: none;
         }
         .accordion-body {
             padding: 0;
@@ -41,12 +26,6 @@
                     margin-top: .5rem;
                 }
             }
-        }
-        .accordion-button:not(.collapsed)::after {
-            background-image: var(--bs-accordion-btn-icon);
-        }
-        .accordion-button-empty::after{
-            display: none;
         }
     }
 }
