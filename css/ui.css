@@ -1098,3 +1098,24 @@ a {
     margin-top: 0.5rem;
   }
 }
+.go-back-link {
+  color: var(--color-green);
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  line-height: normal;
+}
+.go-back-link::before {
+  content: '\f284';
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -0.125em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
