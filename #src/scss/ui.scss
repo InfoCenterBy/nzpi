@@ -184,6 +184,7 @@ a{
 }
 .content-title,.content-text{
      color: var(--color-black);
+     font-family: $font-Rubik;
 }
 .content-text {
      font-size: 1.125rem;
@@ -242,3 +243,186 @@ a{
           font-size: .875rem;
      }
 }
+
+.title-line {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     span{
+          color: var(--color-black);
+          font-family: $font-Rubik;
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 150%;
+          &::after{
+               display: block;
+               position: relative;
+               top: 3px;
+               content: '';
+               width: 100%;
+               border-bottom: 3px solid var(--color-green);
+          }
+     }
+     &__line{
+          height: 3px;
+          width: 100%;
+          background-color: var(--color-light-gray);
+     }
+}
+
+.title-line-name{
+     span{
+          color: var(--color-green);
+          font-size: 20px;
+          text-transform: uppercase;
+          line-height: 120%;
+     }
+}
+
+ul.list-dot {
+     list-style: none;
+     font-family: $font-Rubik;
+     color: var(--color-black);
+     font-size: 1.125rem;
+     font-weight: 400;
+     line-height: 150%;
+     li::before {
+          content: "\2022";
+          color: var(--color-green);
+          font-size: 26px;
+          line-height: 26px;
+          font-weight: bold;
+          display: inline-block; 
+          width: 1em;
+          margin-left: -1em;
+     }
+}
+
+.list-num{
+     &, li{
+          font-family: $font-Rubik;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 150%;
+          color: var(--color-black);
+     }
+}
+
+.link-block-alt {
+     display: flex; 
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     width: 100%;
+     color: var(--color-black);
+     font-family: $font-Rubik;
+     font-size: 1rem;
+     font-weight: 500;
+     line-height: 120%;
+     text-transform: uppercase;
+     transition: $transition-3;
+     border: 1px solid var(--color-light-gray);
+     padding: 20px;
+     @media #{$mouse-device} {
+          &:hover{
+               border: 1px solid var(--color-green);
+               color: var(--color-green);
+          }
+     }
+     &__icon{
+          margin-left: 20%;
+          @media #{$ui-tablet} {
+               margin-left: 5%;
+          }
+     }
+     &__icon::before {
+          content: '\F144';
+          color: var(--color-green);
+          font-size: 1rem;
+          display: inline-block;
+          font-family: bootstrap-icons !important;
+          font-style: normal;
+          font-weight: normal !important;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          vertical-align: -.125em;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+     }
+}
+
+.link-block-alt-download{
+     .link-block-alt__icon::before {
+          content: '\F30A';
+     }
+}
+
+.highlighter-left{
+     padding: .75rem .5rem .75rem 2rem;
+     border-left: 3px solid var(--color-green);
+     color: var(--color-black);
+     font-family: $font-Rubik;
+     font-size: 1.125rem;
+     font-weight: 500;
+     line-height: 150%;
+}
+
+.btn-default{
+     padding: .5rem 1rem;
+     background-color: var(--color-green);
+     color: var(--color-white);
+     font-size: 1.125rem;
+     font-weight: 400;
+     line-height: 150%;
+     transition: $transition-3;
+     width: fit-content;
+     user-select: none;
+     @media #{$mouse-device} {
+          &:hover{
+               background-color: var(--color-dark-green);
+          }
+     }
+}
+
+@layer component{
+     .accordion-item:first-of-type .accordion-button {
+          border-top-left-radius: 0;
+          border-top-right-radius: 0;
+     }
+     .accordion-item:last-of-type .accordion-button.collapsed{
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+     }
+}
+
+#accordionList{
+     @layer component{
+          .accordion-button{
+               border: 1px solid var(--color-medium-gray);
+               padding: 20px;
+               color: var(--color-black);
+               font-family: $font-Rubik;
+               font-weight: 500;
+               line-height: 120%;
+               text-transform: uppercase;
+               transition: $transition-3;
+               @media #{$mouse-device} {
+                    &:hover{
+                         border: 1px solid var(--color-green);
+                         color: var(--color-green);
+                    }
+               }
+               &:focus{
+                    border: 1px solid var(--color-green);
+                    color: var(--color-green);
+               }
+          }
+     }
+     .accordion-body{
+          border: 1px solid var(--color-medium-gray);
+          border-top: 0;
+     }
+}
+

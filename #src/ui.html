@@ -4,17 +4,178 @@
           "title":"ui",
           'style-path': 'href="css/pages/ui-page.css"'
      })
-<body class="ui-page d-flex flex-row align-items-start">
-     <nav class="ui-nav">
-          <li class="">
-               <a class="" href="#">Item 1</a>
-          </li>
-          <li class="">
-               <a class="" href="#">Item 2</a>
-          </li>
+<body class="ui-page d-flex flex-row align-items-start px-3 pt-5">
+     <nav class="ui-nav border-1 border p-2 d-none d-md-block">
+          <ol>
+               <li>
+                    <a href="#1">title with line</a>
+               </li>
+               <li>
+                    <a href="#2">list dot</a>
+               </li>
+               <li>
+                    <a href="#3">list num</a>
+               </li>
+               <li>
+                    <a href="#4">accordion list</a>
+               </li>
+               <li>
+                    <a href="#5">link block alt</a>
+               </li>
+               <li>
+                    <a href="#6">highlith left</a>
+               </li>
+               <li>
+                    <a href="#7">dowload block</a>
+               </li>
+               <li>
+                    <a href="#8">title with line (name)</a>
+               </li>
+               <li>
+                    <a href="#9">paragraph</a>
+               </li>
+               <li>
+                    <a href="#10">button</a>
+               </li>
+          </ol>
      </nav>
-     <div class="ui-content">
-          sdfsdf
+     <div class="ui-content ms-md-3 ms-0 w-100">
+          <section id="1">
+               <h1 class="h1">title with line</h1>
+               <div class="title-line">
+                    <span>Для осуществления своих функций Центр имеет право:</span>
+                    <div class="title-line__line"></div>
+               </div>
+          </section>
+          <section id="2">
+               <h1 class="h1">list dot</h1>
+               <ul class="list-dot">
+                    <li>запрашивать и получать в установленном законодательством порядке от государственных органов, иных организаций и 
+                         физических лиц документы, необходимые для осуществления своей деятельности;
+                    </li>
+                    <li>использовать государственные (в том числе правительственные) средства связи и коммуникации;</li>
+                    <li>заключать в пределах своей компетенции договоры с государственными органами, иными организациями и 
+                         физическими лицами, а также с органами и организациями иностранных государств, международными 
+                         организациями и межгосударственными образованиями;
+                    </li>
+                    <li>формировать при Центре аналитические и другие группы для проведения научных исследований в области права и реализации иных полномочий.</li>
+               </ul>
+          </section>
+          <section id="3">
+               <h1 class="h1">list num</h1>
+               <ol class="list-num">
+                    <li>
+                         Указ Президента Республики Беларусь от 17 ноября 2004 г. № 560 ”Об утверждении Положения о 
+                         присуждении ученых степеней и присвоении ученых званий“ (в ред. Указа Президента Республики Беларусь от 2 июня 2022 г. № 190);
+                    </li>
+                    <li>
+                         Постановление Высшей аттестационной комиссии Республики Беларусь от 28февраля 2014г. № 3 ”Об 
+                         утверждении Инструкции о порядке оформления квалификационной научной работы (диссертации) на 
+                         соискание ученых степеней кандидата и доктора наук, автореферата и публикаций по теме диссертации“;
+                    </li>
+                    <li>
+                         Постановление Высшей аттестационной комиссии Республики Беларусь от 22февраля 2005г. № 19 ”Об утверждении Положения о совете по защите диссертаций“;
+                    </li>
+                    <li>
+                         Постановление Высшей аттестационной комиссии Республики Беларусь от 30марта 2005 г. № 40 ”Об утверждении Положения об экспертном совете Высшей аттестационной комиссии»;
+                    </li>
+               </ol>
+          </section>
+          <section id="4">
+               <h1 class="h1">accordion list</h1>
+               <div class="accordion" id="accordionList">
+                    <div class="accordion-item">
+                         <h2 class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                   Accordion Item #1
+                              </button>
+                         </h2>
+                         <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionList">
+                              <div class="accordion-body">
+                                   <ul class="list-dot">
+                                        <li>запрашивать и получать в установленном законодательством порядке от государственных органов, иных организаций и 
+                                             физических лиц документы, необходимые для осуществления своей деятельности;
+                                        </li>
+                                        <li>использовать государственные (в том числе правительственные) средства связи и коммуникации;</li>
+                                        <li>заключать в пределах своей компетенции договоры с государственными органами, иными организациями и 
+                                             физическими лицами, а также с органами и организациями иностранных государств, международными 
+                                             организациями и межгосударственными образованиями;
+                                        </li>
+                                        <li>формировать при Центре аналитические и другие группы для проведения научных исследований в области права и реализации иных полномочий.</li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section id="5">
+               <h1 class="h1">link block alt</h1>
+               <div class="row">
+                    <div class="col-md-6">
+                         <a href="#" target="_blank" class="link-block-alt">
+                              <span>Главный советник по кадровой и идеологической работе</span>
+                              <div class="link-block-alt__icon"></div>
+                         </a>
+                    </div>
+                    <div class="col-md-6">
+                         <a href="#" target="_blank" class="link-block-alt">
+                              <span>Главный советник по кадровой и идеологической работе</span>
+                              <div class="link-block-alt__icon"></div>
+                         </a>
+                    </div>
+               </div>
+          </section>
+          <section id="6">
+               <h1 class="h1">highlighter left</h1>
+               <div class="highlighter-left">
+                    <p>
+                         В настоящее время данная сфера правоотношений находится на новом этапе своего развития — 
+                         17 июля 2018 г. принят новый Закон Республики Беларусь ”О нормативных правовых актах“, 
+                         который вступил в силу с 1 февраля 2019 г.
+                    </p>
+               </div>
+          </section>
+          <section id="7">
+               <h1 class="h1">dowload block</h1>
+               <div class="row">
+                    <div class="col-md-6">
+                         <a href="#" target="_blank" class="link-block-alt link-block-alt-download">
+                              <span>Главный советник по кадровой и идеологической работе</span>
+                              <div class="link-block-alt__icon"></div>
+                         </a>
+                    </div>
+                    <div class="col-md-6">
+                         <a href="#" target="_blank" class="link-block-alt link-block-alt-download">
+                              <span>Главный советник по кадровой и идеологической работе</span>
+                              <div class="link-block-alt__icon"></div>
+                         </a>
+                    </div>
+               </div>
+          </section>
+          <section id="8">
+               <h1 class="h1">title with line (name)</h1>
+               <div class="title-line title-line-name">
+                    <span>Мицкевич Валерий Вацлавович</span>
+                    <div class="title-line__line"></div>
+               </div>
+          </section>
+          <section id="9">
+               <h1 class="h1">paragraph</h1>
+               <p class="content-text mt-md-4 mt-3">
+                    Национальный центр законодательства и&nbsp;правовых исследований Республики 
+                    Беларусь (далее&nbsp;— Центр) является научно-практическим государственным 
+                    учреждением, обеспечивающим подготовку проектов законодательных актов 
+                    в&nbsp;Республике Беларусь, методическое руководство нормотворческой деятельностью, 
+                    проведение научных исследований в&nbsp;области права и&nbsp;подготовку научных 
+                    работников высшей квалификации.
+               </p>
+          </section>
+          <section id="10">
+               <h1 class="h1">button</h1>
+               <div class="btn-default" type="button">
+                    Все функции
+               </div>
+          </section>
      </div>
 </body>
 </html>
