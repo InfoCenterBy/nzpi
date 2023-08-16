@@ -1073,7 +1073,7 @@ a {
   .side-nav .side-nav-active {
     position: relative;
   }
-  .side-nav .side-nav-active .accordion-button::before {
+  .side-nav .side-nav-active > .accordion-header > .accordion-button::before {
     content: '';
     position: absolute;
     top: 0;
