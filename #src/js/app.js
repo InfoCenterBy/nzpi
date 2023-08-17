@@ -42,15 +42,29 @@ function calcBlockMargin() {
 window.addEventListener('load', calcBlockMargin);
 window.addEventListener('resize', calcBlockMargin);
 
-const swiper = new Swiper('.swiper-news', {
+const swiperNews = new Swiper('#swiperNews', {
      speed: 400,
-     spaceBetween: 100,
      navigation: {
-          nextEl: '.swiper-news .swiper-button-next',
-          prevEl: '.swiper-news .swiper-button-prev',
+          nextEl: '#swiperNews .swiper-button-next',
+          prevEl: '#swiperNews .swiper-button-prev',
      },
      pagination: {
           el: '.swiper-pagination',
           clickable: true,
+     },
+});
+
+const swiperPhoto = new Swiper('#swiperPhoto', {
+     speed: 400,
+     slidesPerView: 1,
+     spaceBetween: 20,
+     navigation: {
+          nextEl: '#photoNav .swiper-button-next',
+          prevEl: '#photoNav .swiper-button-prev',
+     },
+     breakpoints: {
+          1100: {
+               slidesPerView: 2,
+          },
      },
 });

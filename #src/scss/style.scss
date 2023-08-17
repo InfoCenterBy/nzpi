@@ -37,6 +37,10 @@ main{
 
 main{
      section{
+          margin-top: 2.75rem;
+          @media #{$ui-tablet} {
+               margin-top: 1.5rem;
+          }
           &:first-of-type{
                margin-top: 3.125rem;
                @media #{$ui-tablet} {

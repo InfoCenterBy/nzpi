@@ -535,7 +535,7 @@ ul.list-dot {
                transform: translateX(0.5rem) scaleY(0.8);
           }
      }
-     &::after{
+     &:not(.section-title-empty)::after{
           content: '\F285';
           font-size: 1.375rem;
           display: inline-block;
