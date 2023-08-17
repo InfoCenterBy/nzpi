@@ -41,3 +41,16 @@ function calcBlockMargin() {
 
 window.addEventListener('load', calcBlockMargin);
 window.addEventListener('resize', calcBlockMargin);
+
+const swiper = new Swiper('.swiper-news', {
+     speed: 400,
+     spaceBetween: 100,
+     navigation: {
+          nextEl: '.swiper-news .swiper-button-next',
+          prevEl: '.swiper-news .swiper-button-prev',
+     },
+     pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+     },
+});
