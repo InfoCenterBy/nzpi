@@ -178,7 +178,14 @@ layer(vendor);
 }
 
 .header-info .info-search {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 910px) {
+  .header-info .info-search {
+    display: none;
+  }
 }
 
 .info-search {
