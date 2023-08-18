@@ -83,3 +83,30 @@ const swiperVideo = new Swiper('#swiperVideo', {
           },
      },
 });
+
+const swiperNet = new Swiper('#swiperNet', {
+     speed: 400,
+     slidesPerView: 4,
+     spaceBetween: 24,
+     navigation: {
+          nextEl: '#netNav .swiper-button-next',
+          prevEl: '#netNav .swiper-button-prev',
+     },
+     breakpoints: {
+          320: {
+               slidesPerView: 1,
+          },
+          640: {
+               slidesPerView: 2,
+          },
+          1000: {
+               slidesPerView: 2,
+          },
+          1100: {
+               slidesPerView: 3,
+          },
+          1200: {
+               slidesPerView: 4,
+          },
+     },
+});
