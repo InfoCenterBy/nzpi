@@ -1,5 +1,5 @@
 .ui-page {
-  height: 300vh;
+  min-height: 300vh;
 }
 
 .ui-nav {
