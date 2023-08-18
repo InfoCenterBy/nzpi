@@ -68,3 +68,18 @@ const swiperPhoto = new Swiper('#swiperPhoto', {
           },
      },
 });
+
+const swiperVideo = new Swiper('#swiperVideo', {
+     speed: 400,
+     slidesPerView: 1,
+     spaceBetween: 20,
+     navigation: {
+          nextEl: '#videoNav .swiper-button-next',
+          prevEl: '#videoNav .swiper-button-prev',
+     },
+     breakpoints: {
+          1100: {
+               slidesPerView: 2,
+          },
+     },
+});
