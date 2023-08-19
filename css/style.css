@@ -1955,6 +1955,9 @@ ul.list-dot li::before {
   .bg-lightest-gray {
     background-color: var(--color-lightest-gray);
   }
+  .color-dark-gray {
+    color: var(--color-dark-gray);
+  }
 }
 .lang-btn {
   font-size: 0.875rem;
