@@ -34,9 +34,11 @@ const mobMenu = document.querySelector('nav.mobile-menu');
 const mobList = document.querySelector('nav.mobile-menu .mobile-list');
 
 function calcBlockMargin() {
-     let numberHeight = new Number(topHeader.offsetHeight) + 55 + 'px';
-     mobMenu.style.marginTop = numberHeight;
-     mobList.style.paddingBottom = numberHeight;
+     if (topHeader) {
+          let numberHeight = new Number(topHeader.offsetHeight) + 55 + 'px';
+          mobMenu.style.marginTop = numberHeight;
+          mobList.style.paddingBottom = numberHeight;
+     }
 }
 
 window.addEventListener('load', calcBlockMargin);
@@ -110,3 +112,13 @@ const swiperNet = new Swiper('#swiperNet', {
           },
      },
 });
+
+let sortBtn = document.querySelectorAll('.sort-btn');
+
+if (sortBtn) {
+     sortBtn.forEach((el) => {
+          el.addEventListener('click', () => {
+               el.classList.toggle('sort-btn-clicked');
+          });
+     });
+}

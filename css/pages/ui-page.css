@@ -17,3 +17,7 @@
 .ui-content section:not(:first-child) {
   margin-top: 3rem;
 }
+
+body {
+  padding-bottom: 450px;
+}
