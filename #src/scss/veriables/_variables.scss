@@ -66,3 +66,17 @@ $layer-base: 2;
 $layer-ui: 3; //header, footer, menu
 $layer-modal: 4;
 // *!------*
+
+// ? bootstrap icon class
+.bootsrtap-icon{
+     display: inline-block;
+     font-family: bootstrap-icons !important;
+     font-style: normal;
+     font-weight: normal !important;
+     font-variant: normal;
+     text-transform: none;
+     line-height: 1;
+     vertical-align: -.125em;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
