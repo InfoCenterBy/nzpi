@@ -2370,3 +2370,39 @@ ul.list-dot li::before {
   aspect-ratio: 16/9;
   width: 100%;
 }
+
+.opacity-block {
+  position: relative;
+  height: 0px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+}
+.opacity-block:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 0px;
+  -webkit-box-shadow: 0px -25px 25px 50px rgb(255, 255, 255);
+          box-shadow: 0px -25px 25px 50px rgb(255, 255, 255);
+}
+
+.block-list {
+  overflow: hidden;
+}
+.block-list__item {
+  padding: 1.25rem;
+  color: var(--color-black);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 110%;
+  border: 2px solid var(--color-light-gray);
+  background-color: var(--color-white);
+}
+@media screen and (max-width: 910px) {
+  .block-list__item {
+    padding: 0.625rem;
+  }
+}
