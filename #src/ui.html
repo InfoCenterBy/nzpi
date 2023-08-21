@@ -67,6 +67,18 @@
                <li>
                     <a href="#20">pagination</a>
                </li>
+               <li>
+                    <a href="#21">list-table without head</a>
+               </li>
+               <li>
+                    <a href="#22">comment block</a>
+               </li>
+               <li>
+                    <a href="#23">photo</a>
+               </li>
+               <li>
+                    <a href="#24">iframe</a>
+               </li>
           </ol>
      </nav>
      <div class="ui-content ms-md-3 ms-0 w-100">
@@ -344,7 +356,7 @@
                          <a href="" class="go-back-link">
                               Вернуться назад
                          </a>
-                         <button class="print-btn">
+                         <button class="print-btn" onclick="window.print()">
                               <span>Распечатать</span>
                          </button>
                     </div>
@@ -364,18 +376,136 @@
           </section>
           <section id="20">
                <h1 class="h1">pagination</h1>
+               <div class="mt-3"></div>
+               <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                         <li class="page-item page-item-disabled page-item-back"><a class="page-link" href="#">Назад</a></li>
+                         <li class="page-item"><a class="page-link" href="#">1</a></li>
+                         <li class="page-item"><a class="page-link" href="#">2</a></li>
+                         <li class="page-item"><a class="page-link" href="#">...</a></li>
+                         <li class="page-item"><a class="page-link" href="#">3</a></li>
+                         <li class="page-item"><a class="page-link" href="#">4</a></li>
+                         <li class="page-item page-item-next"><a class="page-link" href="#">Вперёд</a></li>
+                    </ul>
+               </nav>
           </section>
-          <div class="mt-3"></div>
-          <nav aria-label="Page navigation example">
-               <ul class="pagination">
-                    <li class="page-item"><a class="page-link" href="#">Назад</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">...</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Вперёд</a></li>
-               </ul>
-          </nav>
+          <section id="21">
+               <h1 class="h1">list-table without head</h1>
+               <div class="list-table">
+                    <div class="list-table__item">
+                         <span>12.00.01</span>
+                         <p>
+                              теория и история права и государства; история учений о праве и государстве
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.02</span>
+                         <p>
+                              конституционное право; конституционный процесс; муниципальное право
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.03</span>
+                         <p>
+                              гражданское право; предпринимательское право; семейное право; международное частное право
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.05</span>
+                         <p>
+                              трудовое право; право социального обеспечения
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.06</span>
+                         <p>
+                              земельное право; природоресурсное право; аграрное право; экологическое право
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.08</span>
+                         <p>
+                              уголовное право и криминология; уголовно-исполнительное право
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.10</span>
+                         <p>
+                              международное право; европейское право
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.13</span>
+                         <p>
+                              информационное право
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.14</span>
+                         <p>
+                              административное право, административно-деликтное право, административный процесс
+                         </p>
+                    </div>
+                    <div class="list-table__item">
+                         <span>12.00.15</span>
+                         <p>
+                              гражданский процесс; хозяйственный процесс; арбитражный процесс
+                         </p>
+                    </div>
+               </div>
+          </section>
+          <section id="22">
+               <h1 class="h1">comment block</h1>
+               <div class="comment-block">
+                    <div class="comment-block__img">
+                         <img src="./img/png/comment-img.png" alt="comment-img">
+                    </div>
+                    <div class="comment-block__content">
+                         <div class="comment-block__title">
+                              <div class="title-line">
+                                   <span>Семашко <br> Елена <br> Валентиновна</span>
+                                   <div class="title-line__line"></div>
+                              </div>
+                              <i class="bi bi-arrow-up-right"></i>
+                         </div>
+                         <p>
+                              Заместитель директора — руководитель 
+                              Института правовых исследований, кандидат юридических наук, доцент
+                         </p>
+                    </div>
+               </div>
+               <div class="mt-3"></div>
+               <div class="comment-block comment-block-link">
+                    <div class="comment-block__img">
+                         <img src="./img/png/comment-img.png" alt="comment-img">
+                    </div>
+                    <div class="comment-block__content">
+                         <div class="comment-block__title">
+                              <div class="title-line">
+                                   <span>Семашко <br> Елена <br> Валентиновна</span>
+                                   <div class="title-line__line"></div>
+                              </div>
+                              <i class="bi bi-arrow-up-right"></i>
+                         </div>
+                         <p>
+                              Заместитель директора — руководитель 
+                              Института правовых исследований, кандидат юридических наук, доцент
+                         </p>
+                    </div>
+               </div>
+          </section>
+          <section id="23">
+               <h1 class="h1">photo</h1>
+               <div class="img-default">
+                    <img src="./img/png/photo-default.png" alt="photo-default">
+               </div>
+          </section>
+          <section id="24">
+               <h1 class="h1">iframe</h1>
+               <div class="img-default">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ca86QCWO6OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               </div>
+          </section>
      </div>
      <script src="js/script.min.js"></script>
 </body>

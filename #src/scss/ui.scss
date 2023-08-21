@@ -2,13 +2,13 @@
 @import './ui-comp/mobile/mobile-menu';
 a{
      text-decoration: none;
-     color: var(--color-black);
      font-family: $font-Rubik;
      font-weight: 400;
      line-height: 150%;
 }
 
 a.link-default{
+     color: var(--color-black);
      @media #{$mouse-device} {
           &:hover{
                color: var(--color-green);
@@ -876,4 +876,151 @@ ul.list-dot {
      }
 }
 
+@layer component{
+     .page-link {
+          padding: 1rem;
+          font-size: 1rem;
+          color: var(--color-dark-gray);
+          background-color: var(--color-white-background);
+          border: 1px solid var(--color-light-gray);
+          transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+          letter-spacing: 1px;
+          font-weight: 500;
+          line-height: 17px;
+          @media #{$ui-tablet} {
+               font-size: .75rem;
+               padding: 0.5rem;
+          }
+          @media #{$ui-mobile} {
+               padding: .25rem;
+          }
+     }
+     .page-item{
+          cursor: pointer;
+          @media #{$mouse-device} {
+               &:not(:first-child, :last-child):hover .page-link{
+                    background-color: var(--color-green);
+                    color: var(--color-white-background);
+               }
+          }
+     }
+     .page-link:focus {
+          color: var(--color-white-background);
+          background-color: var(--color-green);
+          box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+     }
+     .page-item:first-child .page-link, .page-item:last-child .page-link{
+          border-radius: 0;
+          border: 2px solid transparent;
+          transition: $transition-3;
+     }
+     .page-item:first-child:not(.page-item-disabled) .page-link, .page-item:last-child:not(.page-item-disabled) .page-link{
+          color: var(--color-green);
+     }
+     .page-item:not(:first-child) .page-link {
+          margin-left: .75rem;
+     }
+     .page-item-back:not(.page-item-disabled), .page-item-next:not(.page-item-disabled){
+          @media #{$mouse-device} {
+               &:hover .page-link{
+                    border-bottom-color: var(--color-green);
+               }
+          }
+     }
+}
+
+.list-table {
+     display: flex;
+     flex-direction: column;
+
+     &__item {
+          display: flex;
+          flex-direction: row;
+          @media #{$ui-mobile} {
+               flex-wrap: wrap;
+          }
+          &:not(:first-of-type){
+               margin-top: 1rem;
+          }
+          color: var(--color-black);
+          font-family: $font-Rubik;
+          font-size: 1.125rem;
+          font-weight: 400;
+          line-height: 150%;
+          border-bottom: 1px solid var(--color-light-gray);
+          span{
+               font-weight: 600;
+          }
+          p{
+               display: inline;
+               margin-left: 3rem;
+               @media #{$ui-tablet} {
+                    margin-left: 1rem;
+               }
+          }
+     }
+}
+
+.comment-block {
+     display: flex;
+     flex-direction: row;
+     padding: 1.25rem;
+     border: 1px solid var(--color-light-gray);
+     transition: $transition-3;
+     @media #{$mouse-device} {
+          &:hover{
+               border: 1px solid var(--color-green);
+          }
+     }
+     &__img {
+          img{
+               aspect-ratio: 1/1;
+               width: 100%;
+               max-width: 13.75rem;
+          }
+     }
+
+     &__content {
+          margin-left: .75rem;
+          width: 100%;
+          p{
+               margin-top: .75rem;
+               color: var(--color-darkest-gray);
+               font-size: .875rem;
+               font-weight: 400;
+               line-height: 150%;
+          }
+     }
+
+     &__title {
+          display: flex;
+          flex-direction: row;
+          text-transform: uppercase;
+          .title-line{
+               span{
+                    font-size: 1.25rem;
+                    line-height: 120%;
+                    color: var(--color-green);
+               }
+          }
+          .bi{
+               display: none;
+               font-size: 1.25rem;
+               color: var(--color-green);
+          }
+     }
+}
+
+.comment-block-link{
+     .bi{
+          display: block;
+     }
+}
+
+.img-default {
+     img,iframe{
+          aspect-ratio: 16/9;
+          width: 100%;
+     }
+}
 
