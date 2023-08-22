@@ -16,7 +16,7 @@
      <link rel="stylesheet" href="css/style.css" />
      <title>ui</title>
 </head>
-<body class="ui-page d-flex flex-row align-items-start px-3 pt-5">
+<body class="ui-page d-flex flex-row align-items-start px-2 pt-5">
      <nav class="ui-nav border-1 border p-2 d-none d-md-block">
           <ol>
                <li>
@@ -520,14 +520,18 @@
           </section>
           <section id="23">
                <h1 class="h1">photo</h1>
-               <div class="img-default">
-                    <img src="./img/png/photo-default.png" alt="photo-default">
+               <div class="col-6">
+                    <div class="img-default">
+                         <img src="./img/png/photo-default.png" alt="photo-default">
+                    </div>
                </div>
           </section>
           <section id="24">
                <h1 class="h1">iframe</h1>
-               <div class="img-default">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ca86QCWO6OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+               <div class="col-6">
+                    <div class="img-default">
+                         <iframe width="560" height="315" src="https://www.youtube.com/embed/Ca86QCWO6OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                </div>
           </section>
           <section id="25">
@@ -719,7 +723,161 @@
           </section>
           <section id="28">
                <h1 class="h1">table fio</h1>
+               <div class="table-fio">
+                    <div class="table-fio-header row">
+                         <div class="table-fio-header__element col-1">
+                              №пп
+                         </div>
+                         <div class="table-fio-header__element col-4">
+                              Фамилия, имя, отчество, год рождения
+                         </div>
+                         <div class="table-fio-header__element col-4">
+                              Ученая степень и отрасль науки (год присуждения), шифры и названия специальностей, ученое звание (год присвоения)
+                         </div>
+                         <div class="table-fio-header__element col-3">
+                              Шифр специальности в совете
+                         </div>
+                    </div>
+                    <div class="table-fio-content">
+                         <div class="table-fio-content__elem row">
+                              <p class="col-1">1</p>
+                              <p class="col-4">
+                                   Рябцев Леонид Михайлович 
+                                   <span class="color-green d-block">(председатель совета)</span>
+                              </p>
+                              <p class="col-4">
+                                   Доктор юридических наук с 2001 г. по специальности 12.00.14 – администра­тивное право; 
+                                   финансовое право; информационное право;  <br>
+                                   профессор по специальности «Право» – с 2003 г.
+                              </p>
+                              <p class="col-3">
+                                   <span class="d-block">
+                                        12.00.02
+                                   </span>
+                                   <span class="d-block">
+                                        12.00.05
+                                   </span>
+                                   <span class="d-block">
+                                        12.00.13
+                                   </span>
+                              </p>
+                         </div>
+                         <div class="table-fio-content__elem row">
+                              <p class="col-1">2</p>
+                              <p class="col-4">
+                                   Балашенко Сергей Александрович 
+                                   <span class="color-green d-block">
+                                        (заместитель председателя)
+                                   </span>
+                              </p>
+                              <p class="col-4">
+                                   Доктор юридических наук с 2001 г. по специальности 12.00.14 – администра­тивное 
+                                   право; финансовое право; информационное право; <br>
+                                   кандидат юридических наук с 1992 г. по специальности 12.00.02 — государственное 
+                                   право и управление; административное право; финансовое право; <br>
+                                   профессор по специальности «Право» – с 2007 г.
+                              </p>
+                              <p class="col-3">
+                                   <span class="d-block">
+                                        12.00.02
+                                   </span>
+                                   <span class="d-block">
+                                        12.00.10
+                                   </span>
+                              </p>
+                         </div>
+                         <div class="table-fio-content__elem row">
+                              <p class="col-1">3</p>
+                              <p class="col-4">
+                                   Станкевич Оксана Генриховна 
+                                   <span class="color-green d-block">
+                                        (ученый секретарь совета)
+                                   </span>
+                              </p>
+                              <p class="col-4">
+                                   Кандидат юридических наук с 2003 г. по специальности 12.00.01 – теория и история права и государства; 
+                                   история учений о праве и государстве; <br> 
+                                   доцент по специальности ”Право“ – с 2019 г.
+                              </p>
+                              <p class="col-3">
+                                   <span class="d-block">
+                                        12.00.02
+                                   </span>
+                              </p>
+                         </div>
+                    </div>
+               </div>
 
+               <div class="table-fio-mobile">
+                    <div class="row">
+                         <div class="table-fio-header col-5">
+                              <div class="table-fio-header__element">
+                                   №пп
+                              </div>
+                         </div>
+                         <div class="table-fio-content col-7">
+                              <div class="table-fio-content__elem">
+                                   <p>1</p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="table-fio-header col-5">
+                              <div class="table-fio-header__element">
+                                   Фамилия, имя, отчество, год рождения
+                              </div>
+                         </div>
+                         <div class="table-fio-content col-7">
+                              <div class="table-fio-content__elem">
+                                   <p>
+                                        Рябцев Леонид Михайлович 
+                                        <span class="color-green d-block">
+                                             (председатель совета)
+                                        </span>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="table-fio-header col-5">
+                              <div class="table-fio-header__element">
+                                   Ученая степень и отрасль науки (год присуждения), шифры и названия специальностей, ученое звание (год присвоения)
+                              </div>
+                         </div>
+                         <div class="table-fio-content col-7">
+                              <div class="table-fio-content__elem">
+                                   <p>
+                                        Доктор юридических наук с 2001 г. по специальности 12.00.14 – администра­тивное право; 
+                                        финансовое право; информационное право;  <br>
+                                        профессор по специальности «Право» – с 2003 г.
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="table-fio-header col-5">
+                              <div class="table-fio-header__element">
+                                   Шифр специальности в совете
+                              </div>
+                         </div>
+                         <div class="table-fio-content col-7">
+                              <div class="table-fio-content__elem">
+                                   <p>
+                                        <span class="d-block">
+                                             12.00.02
+                                        </span>
+                                        <span class="d-block">
+                                             12.00.05
+                                        </span>
+                                        <span class="d-block">
+                                             12.00.13
+                                        </span>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
+
+                                   </div>
           </section>
      </div>
      <script src="js/script.min.js"></script>
