@@ -1180,6 +1180,7 @@ ul.list-dot {
      .table-fio-header {
           display: flex;
           flex-direction: column;
+          border-right: 2px solid var(--color-green);
      }
      .table-fio-content{
           display: flex;
