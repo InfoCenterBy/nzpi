@@ -410,7 +410,7 @@ ul.list-dot {
      }
 }
 
-#accordionList{
+.accordion-list{
      @layer component{
           .accordion-button{
                border: 1px solid var(--color-medium-gray);
@@ -1153,4 +1153,49 @@ ul.list-dot {
      &::before{
           content: 'Подробнее';
      }
+}
+
+.table-fio, .table-fio-mobile{
+     font-family: $font-Rubik;
+     font-style: 1.125rem;
+     line-height: 150%;
+     font-weight: 400;
+}
+.table-fio {
+     display: flex;
+     flex-direction: column;
+     .table-fio-header {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border-bottom: 2px solid var(--color-green);
+     }
+}
+.table-fio-mobile {
+     display: flex;
+     flex-direction: column;
+     @media #{$ui-tablet} {
+          font-size: .75rem;
+     }
+     .table-fio-header {
+          display: flex;
+          flex-direction: column;
+     }
+     .table-fio-content{
+          display: flex;
+          flex-direction: column;
+     }
+}
+
+.table-fio-header {
+     
+	&__element{
+          color: var(--color-green);
+          font-weight: 500;
+     }
+}
+.table-fio-content {
+
+	&__elem {
+	}
 }

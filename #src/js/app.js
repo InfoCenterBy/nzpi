@@ -122,3 +122,25 @@ if (sortBtn) {
           });
      });
 }
+
+let sliderImgPrev = new Swiper('.slider-img-prev', {
+     spaceBetween: 24,
+     slidesPerView: 4,
+     freeMode: true,
+     watchSlidesProgress: true,
+});
+
+let sliderImg = new Swiper('.slider-img', {
+     spaceBetween: 10,
+     navigation: {
+          nextEl: '.slider-img .swiper-button-next',
+          prevEl: '.slider-img .swiper-button-prev',
+     },
+     pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+     },
+     thumbs: {
+          swiper: sliderImgPrev,
+     },
+});
