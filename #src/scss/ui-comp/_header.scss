@@ -17,9 +17,6 @@
      img{
           max-width: 212px;
           width: 100%;
-          @media #{$ui-tablet} {
-               max-width: 20%;
-          }
      }
      &__text {
      }
