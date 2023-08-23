@@ -225,6 +225,16 @@
           background-color: var(--color-white-background);
      }
      .swiper-slide-net {
+          @media #{$mouse-device} {
+               &:hover{
+                    span{
+                         color: var(--color-green);
+                    }
+               }
+               &:hover .swiper-slide-net__img{
+                    mix-blend-mode: normal;
+               }
+          }
 		&__text {
                display: flex;
                height: 100%;
@@ -244,6 +254,7 @@
                     font-size: .875rem;
                     font-weight: 500;
                     text-transform: uppercase;
+                    transition: $transition-3;
                }
 		}
           &__img{
@@ -253,6 +264,7 @@
                display: grid;
                place-items: center;
                mix-blend-mode: luminosity;
+               transition: $transition-3;
                img{
                     height: 100%;
                     width: 100%;
