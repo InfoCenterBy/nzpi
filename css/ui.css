@@ -1865,6 +1865,14 @@ ul.list-dot li::before {
           align-items: center;
   background-color: var(--color-white-background);
 }
+@media (hover: hover) and (pointer: fine) {
+  #swiperNet .swiper-slide-net:hover span {
+    color: var(--color-green);
+  }
+  #swiperNet .swiper-slide-net:hover .swiper-slide-net__img {
+    mix-blend-mode: normal;
+  }
+}
 #swiperNet .swiper-slide-net__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1892,6 +1900,8 @@ ul.list-dot li::before {
   font-size: 0.875rem;
   font-weight: 500;
   text-transform: uppercase;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
 }
 #swiperNet .swiper-slide-net__img {
   max-width: 7.875rem;
@@ -1900,6 +1910,8 @@ ul.list-dot li::before {
   display: grid;
   place-items: center;
   mix-blend-mode: luminosity;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
 }
 #swiperNet .swiper-slide-net__img img {
   height: 100%;
@@ -2354,6 +2366,7 @@ ul.list-dot li::before {
   border: 1px solid var(--color-light-gray);
   -webkit-transition: all ease-out 0.3s;
   transition: all ease-out 0.3s;
+  color: var(--color-black);
 }
 @media (hover: hover) and (pointer: fine) {
   .comment-block:hover {
@@ -2823,4 +2836,61 @@ ul.list-dot li::before {
 }
 .news-card .hashtag-news {
   margin-top: 1.5rem;
+}
+
+.left-line {
+  position: relative;
+}
+.left-line::before {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='28' height='169' viewBox='0 0 28 169' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M28 1H1L1.00001 168H28V169H0V168V1V0.5V0H28V1Z' fill='%23E0E0E0'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 169px;
+  display: block;
+  position: absolute;
+  left: -28px;
+  bottom: -15%;
+  background-color: var(--color-white-background);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.line-right {
+  position: relative;
+}
+.line-right::after {
+  position: absolute;
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='1' viewBox='0 0 30 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='-4.37114e-08' y1='0.5' x2='30' y2='0.499997' stroke='%23E0E0E0'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  width: 100%;
+  left: 100%;
+  top: 80%;
+  height: 1px;
+  z-index: -2;
+}
+
+.line-bottom-first::after {
+  height: 74px;
+  top: -17px;
+}
+
+.line-bottom {
+  display: inline-block;
+  position: relative;
+}
+.line-bottom::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  z-index: -2;
+  border-left: 1px solid var(--color-light-gray);
+  left: 160px;
+}
+
+.line-bottom-second::after {
+  height: 198px;
+  top: -190px;
 }
