@@ -2651,3 +2651,55 @@ ul.list-dot li::before {
   color: var(--color-green);
   font-weight: 500;
 }
+
+.photo-gallery__elem {
+  position: relative;
+  background: -webkit-gradient(
+    linear,
+    left bottom, left top,
+    from(rgba(0, 0, 0, 0.6)),
+    to(rgba(0, 0, 0, 0.6))
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+  overflow: hidden;
+}
+@media (hover: hover) and (pointer: fine) {
+  .photo-gallery__elem:hover img {
+    -webkit-transform: scale(120%);
+        -ms-transform: scale(120%);
+            transform: scale(120%);
+  }
+}
+.photo-gallery__elem img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.4;
+  position: relative;
+  z-index: -1;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photo-gallery__elem p {
+  color: var(--color-white-background);
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  bottom: 2rem;
+  left: 1.5rem;
+  z-index: 3;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.photo-gallery__elem p span {
+  font-size: 1rem;
+  font-weight: 400;
+}
