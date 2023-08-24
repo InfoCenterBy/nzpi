@@ -841,19 +841,19 @@ a.link-default {
 }
 
 .fs-16 {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 
 .fs-18 {
-  font-size: 1.125rem;
+  font-size: 1.125rem !important;
 }
 
 .fs-14 {
-  font-size: 0.875rem;
+  font-size: 0.875rem !important;
 }
 
 .fs-12 {
-  font-size: 0.75rem;
+  font-size: 0.75rem !important;
 }
 
 .ff-rubik {
@@ -2909,7 +2909,8 @@ ul.list-dot li::before {
   content: '';
   background-image: url("data:image/svg+xml,%3Csvg width='30' height='1' viewBox='0 0 30 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='-4.37114e-08' y1='0.5' x2='30' y2='0.499997' stroke='%23E0E0E0'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
-  width: 100%;
+  background-size: cover;
+  width: 50%;
   left: 100%;
   top: 80%;
   height: 1px;
@@ -2919,6 +2920,10 @@ ul.list-dot li::before {
 .line-bottom-first::after {
   height: 74px;
   top: -17px;
+}
+
+.managment-page .comment-block {
+  background-color: var(--color-white-background);
 }
 
 .line-bottom {
@@ -2959,6 +2964,46 @@ ul.list-dot li::before {
   border-top: 1px solid var(--color-light-gray);
   left: -50px;
   top: 50%;
+}
+
+.managment-mt-add-1 {
+  margin-top: 16.25rem;
+}
+
+.managment-mt-1 {
+  margin-top: 3.5rem;
+}
+
+.managment-mt-2 {
+  margin-top: 10rem;
+}
+
+.managment-mt-3 {
+  margin-top: 230px;
+}
+
+@media screen and (max-width: 1200px) {
+  .managment-mt-1,
+  .managment-mt-2,
+  .managment-mt-3 {
+    margin-top: 56px !important;
+  }
+}
+
+.line-up {
+  display: inline-block;
+  position: relative;
+}
+.line-up::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 97%;
+  z-index: -1;
+  border-right: 1px solid var(--color-light-gray);
+  left: 30%;
+  top: 0px;
 }
 
 @layer component {
