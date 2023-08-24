@@ -29,13 +29,15 @@
                <label class="lang-btn" for="langEng">ENG</label>
           </div>
           <div class="d-flex">
-               <button type="button" class="vision-btn">
+               <button type="button" class="vision-btn" id="specialButton" style="cursor:pointer;" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ">
                     <i class="bi bi-eye"></i>
                     <span>Версия для слабовидящих</span>
                </button>
           </div>
      </div>
 </section>
+<script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+<script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
      <section class="container py-3 py-md-2 bg-white z-3 position-relative" id="topHeader">
      <div class="row justify-content-between">
           <div class="logo-block col-xl-5 col-8 d-flex flex-row align-items-xl-center align-items-md-start align-items-center justify-content-center">
@@ -535,27 +537,26 @@
                <div class="row">
                     <div class="col-lg-8 my-2 order-lg-first order-2">
                          <h1 class="content-title">Руководство и структурные подразделения</h1>
-                         <div class="comment-block comment-block-link">
-                              <div class="comment-block__img">
-                                   <img src="./img/png/management-img-1.png" alt="management-img-1">
-                              </div>
-                              <div class="comment-block__content">
-                                   <div class="comment-block__title">
-                                        <div class="title-line">
-                                             <span>Ипатов  <br> Вадим <br> Дмитриевич</span>
-                                             <div class="title-line__line"></div>
+                         <div class="row justify-content-between">
+                              <div class="col-lg-6">
+                                   <a href="" class="comment-block comment-block-link">
+                                        <div class="comment-block__img">
+                                             <img src="./img/png/management-img-1.png" alt="management-img-1">
                                         </div>
-                                        <i class="bi bi-arrow-up-right"></i>
-                                   </div>
-                                   <p>
-                                        Директор Национального центра законодательства и правовых исследований Республики Беларусь
-                                   </p>
-                              </div>
-                         </div>
-                         <div class="line-bottom line-bottom-first"></div>
-                         <div class="d-flex flex-row align-items-start justify-content-between mt-5">
-                              <div class="d-flex me-5">
-                                   <a href="" class="comment-block comment-block-link line-right">
+                                        <div class="comment-block__content">
+                                             <div class="comment-block__title">
+                                                  <div class="title-line">
+                                                       <span>Ипатов  <br> Вадим <br> Дмитриевич</span>
+                                                       <div class="title-line__line"></div>
+                                                  </div>
+                                                  <i class="bi bi-arrow-up-right"></i>
+                                             </div>
+                                             <p>
+                                                  Директор Национального центра законодательства и правовых исследований Республики Беларусь
+                                             </p>
+                                        </div>
+                                   </a>
+                                   <a href="" class="comment-block comment-block-link line-right mt-5">
                                         <div class="comment-block__img">
                                              <img src="./img/png/management-img-2.png" alt="management-img-2">
                                         </div>
@@ -572,8 +573,44 @@
                                              </p>
                                         </div>
                                    </a>
+                                   <a href="" class="comment-block comment-block-link line-right">
+                                        <div class="comment-block__img">
+                                             <img src="./img/png/management-img-3.png" alt="management-img-3">
+                                        </div>
+                                        <div class="comment-block__content">
+                                             <div class="comment-block__title">
+                                                  <div class="title-line">
+                                                       <span>гайдученок  <br> Валерий  <br> александрович</span>
+                                                       <div class="title-line__line"></div>
+                                                  </div>
+                                                  <i class="bi bi-arrow-up-right"></i>
+                                             </div>
+                                             <p>
+                                                  Заместитель директора
+                                             </p>
+                                        </div>
+                                   </a>
+                                   <a href="" class="comment-block comment-block-link ">
+                                        <div class="comment-block__img">
+                                             <img src="./img/png/comment-img.png" alt="comment-img">
+                                        </div>
+                                        <div class="comment-block__content">
+                                             <div class="comment-block__title">
+                                                  <div class="title-line">
+                                                       <span>Семашко <br> Елена <br> Валентиновна</span>
+                                                       <div class="title-line__line"></div>
+                                                  </div>
+                                                  <i class="bi bi-arrow-up-right"></i>
+                                             </div>
+                                             <p>
+                                                  Заместитель директора&nbsp;— руководитель 
+                                                  Института правовых исследований, кандидат юридических наук, доцент
+                                             </p>
+                                        </div>
+                                   </a>
                               </div>
-                              <div class="d-flex flex-column w-50">
+                              <div class="col-md-5 h-100">
+                                   <div class="col-12"></div>
                                    <a href="" class="comment-block comment-block-link left-line">
                                         <div class="comment-block__content">
                                              <div class="comment-block__title w-100 d-flex justify-content-between">
@@ -594,31 +631,30 @@
                                              </div>
                                         </div>
                                    </a>
-                              </div>
-                         </div>
-                         <div class="line-bottom line-bottom-second"></div>
-                         <div class="d-flex flex-row align-items-start justify-content-between">
-                              <div class="d-flex me-5">
-                                   <a href="" class="comment-block comment-block-link line-right">
-                                        <div class="comment-block__img">
-                                             <img src="./img/png/management-img-3.png" alt="management-img-3">
-                                        </div>
-                                        <div class="comment-block__content">
-                                             <div class="comment-block__title">
-                                                  <div class="title-line">
-                                                       <span>гайдученок  <br> Валерий  <br> александрович</span>
-                                                       <div class="title-line__line"></div>
+                                   <div class="d-flex flex-column">
+                                        <a href="" class="comment-block comment-block-link left-line">
+                                             <div class="comment-block__content">
+                                                  <div class="comment-block__title w-100 d-flex justify-content-between">
+                                                       <strong class="fs-16">Управление конституционного и международного права</strong>
+                                                       <i class="bi bi-arrow-up-right"></i>
                                                   </div>
-                                                  <i class="bi bi-arrow-up-right"></i>
+                                                  <p>
+                                                       &bullet;&nbsp;Отдел конституционного права<br>
+                                                       &bullet;&nbsp;Отдел международного права <br>
+                                                       &bullet;&nbsp;Отдел систематизации законодательства <br>
+                                                  </p>
                                              </div>
-                                             <p>
-                                                  Заместитель директора
-                                             </p>
-                                        </div>
-                                   </a>
-                              </div>
-                              <div class="d-flex flex-column w-50">
-                                   <a href="" class="comment-block comment-block-link left-line">
+                                        </a>
+                                        <a href="" class="comment-block comment-block-link mt-3">
+                                             <div class="comment-block__content">
+                                                  <div class="comment-block__title w-100 d-flex justify-content-between">
+                                                       <strong class="fs-16">Управление законодательства о национальной безопасности и правоохранительной деятельности</strong>
+                                                       <i class="bi bi-arrow-up-right"></i>
+                                                  </div>
+                                             </div>
+                                        </a>
+                                   </div>
+                                   <a href="" class="comment-block comment-block-link line-left-single ">
                                         <div class="comment-block__content">
                                              <div class="comment-block__title w-100 d-flex justify-content-between">
                                                   <strong class="fs-16">Управление конституционного и международного права</strong>
@@ -631,37 +667,9 @@
                                              </p>
                                         </div>
                                    </a>
-                                   <a href="" class="comment-block comment-block-link mt-3">
-                                        <div class="comment-block__content">
-                                             <div class="comment-block__title w-100 d-flex justify-content-between">
-                                                  <strong class="fs-16">Управление законодательства о национальной безопасности и правоохранительной деятельности</strong>
-                                                  <i class="bi bi-arrow-up-right"></i>
-                                             </div>
-                                        </div>
-                                   </a>
                               </div>
                          </div>
-                         <div class="line-bottom line-bottom-third"></div>
-                         <div class="comment-block comment-block-link mt-5">
-                              <div class="comment-block__img">
-                                   <img src="./img/png/comment-img.png" alt="comment-img">
-                              </div>
-                              <div class="comment-block__content">
-                                   <div class="comment-block__title">
-                                        <div class="title-line">
-                                             <span>Семашко <br> Елена <br> Валентиновна</span>
-                                             <div class="title-line__line"></div>
-                                        </div>
-                                        <i class="bi bi-arrow-up-right"></i>
-                                   </div>
-                                   <p>
-                                        Заместитель директора&nbsp;— руководитель 
-                                        Института правовых исследований, кандидат юридических наук, доцент
-                                   </p>
-                              </div>
-                         </div>
-
-                                                  <div class="go-back mt-5">
+                         <div class="go-back mt-5">
                               <hr>
                               <div class="w-100">
                                    <a href="" class="go-back-link">

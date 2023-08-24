@@ -2945,6 +2945,22 @@ ul.list-dot li::before {
   top: -150px;
 }
 
+.line-left-single {
+  display: inline-block;
+  position: relative;
+}
+.line-left-single::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  z-index: 1;
+  border-top: 1px solid var(--color-light-gray);
+  left: -50px;
+  top: 50%;
+}
+
 @layer component {
   .bg-green {
     background-color: var(--color-green);
