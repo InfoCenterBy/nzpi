@@ -2940,6 +2940,11 @@ ul.list-dot li::before {
   top: -190px;
 }
 
+.line-bottom-third::after {
+  height: 206px;
+  top: -150px;
+}
+
 @layer component {
   .bg-green {
     background-color: var(--color-green);
