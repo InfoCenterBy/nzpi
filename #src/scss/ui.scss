@@ -1543,6 +1543,12 @@ ul.list-dot {
      }
 }
 
+.list-dot-fill{
+     &::before{
+          background-color: var(--color-green) !important;
+     }
+}
+
 .list-multi-mark-arrow.list-multi-fill{
      & > li{
           &:before {
@@ -1611,5 +1617,48 @@ ul.list-dot {
      }
      .link-block-alt{
           width: auto;
+     }
+}
+
+.dissertation-card{
+     padding: 1.5rem;
+     color: var(--color-black);
+     font-size: 1.125rem;
+     font-weight: 400;
+     line-height: 150%;
+     border: 1px solid var(--color-light-gray);
+     transition: $transition-3;
+     &:not(.dissertation-card-full){
+          @media #{$mouse-device} {
+               &:hover{
+                    border: 1px solid var(--color-green);
+               }
+          }
+     }
+}
+
+.vacancy-card{
+     padding: 1.25rem;
+     border: 1px solid var(--color-light-gray);
+     transition: $transition-3;
+     color: var(--color-black);
+     @media #{$mouse-device} {
+          &:hover{
+               border: 1px solid var(--color-green);
+          }
+     }
+     &__title{
+          font-size: 1.25rem;
+     }
+     &__title, &__info-title{
+          font-weight: 500;
+          line-height: 120%;
+          text-transform: uppercase;
+     }
+     &__info-title{
+          font-size: 1rem;
+     }
+     li{
+          font-size: 1.125rem;
      }
 }
