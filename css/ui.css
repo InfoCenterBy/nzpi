@@ -416,8 +416,9 @@
   .dropdown-content__title {
     font-size: 16px;
     line-height: 150%;
-    color: var(--color-green);
+    color: var(--color-green) !important;
     font-weight: 600;
+    font-family: 'Inter', sans-serif;
   }
   @media (max-width: 1500px) {
     .dropdown-content__title {
@@ -812,7 +813,7 @@ a.link-default {
 }
 
 .ff-rubik {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif !important;
 }
 
 .arrow-link {
