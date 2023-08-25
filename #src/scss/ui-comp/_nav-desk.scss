@@ -123,8 +123,9 @@
           &__title{
                @include adaptiv-value('font-size', 16, 14, 1);
                line-height: 150%;
-               color: var(--color-green);
+               color: var(--color-green) !important;
                font-weight: 600;
+               font-family: $font-Inter;
           }
      }
 }

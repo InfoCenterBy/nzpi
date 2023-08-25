@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ru">
+     @@include('./html-comp/_head.html',{
+          "title":"The National Center of Legislation and Legal Research of the Republic of Belarus",
+     })
+<body>
+     <header>
+          <section class="bg-green z-3 position-relative">
+               <div class="header-top-btn container d-flex flex-row justify-content-between flex-wrap">
+                    <div class="d-flex flex-row flex-wrap justify-content-center">
+                         <input type="radio" name="langBtn" id="langRus">
+                         <label class="lang-btn" for="langRus">РУС</label>
+                         <input type="radio" name="langBtn" id="langBel">
+                         <label class="lang-btn" for="langBel">БЕЛ</label>
+                         <input type="radio" name="langBtn" id="langEng">
+                         <label class="lang-btn" for="langEng">ENG</label>
+                    </div>
+                    
+               </div>
+          </section>
+          <section class="container py-3 py-md-4 bg-white z-3 position-relative" id="topHeader">
+               <div class="row justify-content-between">
+                    <div class="logo-block col-xl-5 col-8 d-flex flex-row align-items-xl-center align-items-md-start align-items-center justify-content-center">
+                         <a href="./main.html" target="_blank" class="d-block w-100">
+                              <img src="./img/png/nzpi-logo-eng.png" alt="logo">
+                         </a>
+                         <div class="logo-block__text d-flex flex-column ms-md-4 ms-1">
+                              <div class="logo-block__title">
+                                   The National Center of Legislation and Legal Research of the Republic of Belarus
+                              </div>
+                              <div class="logo-block__sub">
+                                   The Official website
+                              </div>
+                         </div>
+                    </div>
+                    <div class="header-info col-xl-5 col-4 d-flex flex-column align-items-end justify-content-center">
+                         <div class="info-search w-100">
+                              <input type="text" placeholder="Search">
+                              <i class="bi bi-search"></i>
+                         </div>
+                         <div class="header-info__full flex-md-row flex-column flex-wrap justify-content-between w-100 mt-md-4 mt-2">
+                              <div class="d-flex flex-column my-1">
+                                   <div class="info-link">
+                                        <i class="bi bi-telephone"></i>
+                                        <a href="tel:8 (017) 200–12–25">8 (017) 200–12–25</a>
+                                   </div>
+                                   <div class="info-link">
+                                        <i class="bi bi-printer"></i>
+                                        <a href="tel:8 (017) 222–40–96">8 (017) 222–40–96</a>
+                                   </div>
+                              </div>
+                              <div class="d-flex flex-column my-1">
+                                   <div class="info-link">
+                                        <i class="bi bi-envelope"></i>
+                                        <a href="mailto:center@pmrb.gov.by">center@pmrb.gov.by</a>
+                                   </div>
+                                   <div class="info-link">
+                                        <i class="bi bi-geo-alt"></i>
+                                        <a>1a Bersona str., Minsk 220050, Republic of Belarus</a>
+                                   </div>
+                              </div>
+                              <div class="my-auto mt-2">
+                                   <a class="header-info__icon" href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                             <path d="M28 14.0857C28 6.30621 21.7323 0 14.0017 0C6.26772 0.00174978 0 6.30621 
+                                             0 14.0875C0 21.1164 5.11986 26.9431 11.811 28V18.1575H8.25897V14.0875H11.8145V10.9816C11.8145 
+                                             7.45232 13.9055 5.50306 17.1024 5.50306C18.6352 5.50306 20.2362 5.77778 
+                                             20.2362 5.77778V9.24234H18.4707C16.7332 9.24234 16.1907 10.329 16.1907 
+                                             11.4436V14.0857H20.0717L19.4523 18.1557H16.189V27.9983C22.8801 26.9414 
+                                             28 21.1146 28 14.0857Z" fill="#F8F7F7"/>
+                                        </svg>
+                                   </a>
+                                   <a class="header-info__icon" href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                             <path fill-rule="evenodd" clip-rule="evenodd" 
+                                             d="M14 28C21.732 28 28 21.732 28 14C28 6.268 21.732 0 
+                                             14 0C6.268 0 0 6.268 0 14C0 21.732 6.268 28 14 28ZM15.3746 
+                                             10.5298C14.9719 16.2718 16.1516 15.465 18.5797 10.5298C18.8366 
+                                             9.79808 19.0705 9.61104 19.648 9.67556H22.9502C23.576 9.68992 
+                                             23.6666 9.9392 23.4358 10.7192C22.5754 12.3538 21.987 13.1073 
+                                             21.0642 14.2892C20.9833 14.3927 20.8999 14.4995 20.8135 
+                                             14.6105C20.2261 15.3932 20.251 15.8111 21.1049 16.5087C22.1212 
+                                             17.3493 22.6108 17.9397 23.4358 19.0713C23.7708 19.7892 23.5854 
+                                             20.0487 22.9502 20.4H19.4538C18.6989 20.1614 18.0666 19.6396 16.5401 
+                                             17.9324C16.0214 17.6845 15.7807 17.6884 15.5689 18.312L15.3746 
+                                             19.6407C15.2222 20.1678 15.0221 20.2865 14.5977 20.4L13 20.3466C8.28916 
+                                             19.3734 6.4394 16.3189 3.62287 10.1498C3.54475 9.68416 3.64969 
+                                             9.53864 4.2056 9.58028H7.02216C7.68692 9.59624 7.89156 9.79656 
+                                             8.09052 10.3389C8.98572 12.5413 9.46768 13.1479 10.3243 14.1353C11.1013 
+                                             15.0309 11.3517 14.404 11.2956 13.4709C11.2956 13.4709 11.3927 11.0046 
+                                             11.2956 10.7192C11.2458 10.573 11.0686 10.5017 10.8554 10.4159C10.6524 
+                                             10.3342 10.4167 10.2394 10.2272 10.0542C9.83872 9.67456 10.6 9.2 11.0042 
+                                             9.2H14.5977C15.2456 9.2642 15.3124 9.69112 15.3746 10.5298Z" fill="#F8F7F7"/>
+                                        </svg>
+                                   </a>
+                              </div>
+                         </div>
+                         <div class="mobile-header-btn">
+                              <button class="mobile-header-btn__search mx-2" data-bs-toggle="modal" 
+                              data-bs-target="#searchModal" type="button"><i class="bi bi-search"></i></button>
+                              <div class="burger">
+                                   <span></span>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </section>
+          <div class="modal fade modal-search" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+               <div class="modal-dialog d-flex justify-content-center">
+                    <div class="modal-content px-0">
+                         <div class="modal-header search-header d-flex flex-row align-items-start py-3 border-bottom-0">
+                              <div class="d-flex flex-row justify-content-center align-items-center w-100 px-4 py-2">
+                                   <form class="info-search w-100 border-0">
+                                        <input type="text" placeholder="Search">
+                                   </form>
+                                   <a class="search-btn ms-2 py-2 px-3" href="./search.html">Search</a>
+                              </div>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div class="mt-4"></div>
+          <hr class="nav-hr">
+          <nav class="main-nav w-100 container justify-content-around">
+               <div class="nav-dropdown">
+                    <div class="nav-toggle" id="">
+                         <a href="" target="_blank" class="nav-main-link">about the Centre</a>
+                         <div class="dropdown-content-wrapper">
+                              <div class="dropdown-content link-list">
+                                   <div class="container justify-content-around ">
+                                        <div class="row">
+                                             <div class="col-1"></div>
+                                             <div class="d-flex  col-2">
+                                                  <a href="" target="_blank" class="dropdown-content__title">Аbout the Centre</a>
+                                             </div>
+                                             <div class="d-flex flex-column col-3">
+                                                  <a href="" target="_blank">Administration</a>
+                                                  <a href="./managment.html" target="_blank">Structure</a>
+                                                  <a href="" target="_blank">History</a>
+                                                  <a href="" target="_blank">Symbols</a>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="nav-dropdown">
+                    <div class="nav-toggle" id="">
+                         <a href="./activity.html" target="_blank" class="nav-main-link">Activity</a>
+                         <div class="dropdown-content-wrapper">
+                              <div class="dropdown-content link-list">
+                                   <div class="container">
+                                        <div class="row row-0 justify-content-center">
+                                             <div class="col-xl-1 col-0"></div>
+                                             <div class="col-md-5">
+                                                  <div class="d-flex flex-row w-100 justify-content-between">
+                                                       <div class="d-flex">
+                                                            <a href="" target="_blank" class="dropdown-content__title">Rule-Making Activity</a>
+                                                       </div>
+                                                       <div class="d-flex flex-column">
+                                                            <a href="" target="_blank">Planning of the Rule-Making Activity</a>
+                                                            <a href="" target="_blank">Preparation of projects of legislative and other acts</a>
+                                                            <a href="" target="_blank">Methodical Supervision of Preparing Drafts of Legal Acts</a>
+                                                            <a href="" target="_blank">Compulsory juridical expert examination of draft laws</a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-2 nav-border">
+                                                  <div class="d-flex flex-row">
+                                                       <div class="d-flex">
+                                                            <a href="" target="_blank" class="dropdown-content__title">Scientific activity</a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-2 nav-border">
+                                                  <div class="d-flex flex-row">
+                                                       <div class="d-flex">
+                                                            <a href="" target="_blank" class="dropdown-content__title">Analytical and scientific research</a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+               <div class="nav-dropdown">
+                    <div class="nav-toggle" id="">
+                         <a href="" target="_blank" class="nav-main-link">International cooperation</a>
+                    </div>
+               </div>
+               <div class="nav-dropdown">
+                    <div class="nav-toggle" id="">
+                         <a href="" target="_blank" class="nav-main-link">contacts</a>
+                    </div>
+               </div>
+          </nav>
+          <hr class="nav-hr">
+          <nav class="mobile-menu">
+               <div class="mobile-list">
+                    <div class="accordion" id="accordionMobile">
+                         <div class="accordion-item mobile-list__item">
+                              <h2 class="accordion-header">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        about the Center
+                                   </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionMobile">
+                                   <div class="accordion-body d-flex flex-column link-list">
+                                        <a href="#" target="_blank">Administrationс</a>
+                                        <a href="#" target="_blank">Structure</a>
+                                        <a href="#" target="_blank">History</a>
+                                        <a href="#" target="_blank">Symbols</a>
+                                   </div>
+                              </div>
+                         </div>
+                         
+                         <div class="accordion-item mobile-list__item">
+                              <h2 class="accordion-header">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Activity
+                                   </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionMobile">
+                                   <div class="accordion-body">
+                                        <div class="accordion-body d-flex flex-column link-list">
+                                             <a href="#" target="_blank"><strong>Rule-Making Activity</strong></a>
+                                             <a href="#" target="_blank">Planning of the Rule-Making Activity</a>
+                                             <a href="#" target="_blank">Preparation of projects of legislative and other acts</a>
+                                             <a href="#" target="_blank">Methodical Supervision of Preparing Drafts of Legal Acts</a>
+                                             <a href="#" target="_blank">Compulsory juridical expert examination of draft laws</a>
+                                             <a href="#" target="_blank"><strong>Scientific activity</strong></a>
+                                             <a href="#" target="_blank"><strong>Analytical and scientific research</strong></a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="accordion-item mobile-list__item">
+                              <h2 class="accordion-header">
+                                   <button class="accordion-button accordion-button-empty collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        International cooperation
+                                   </button>
+                              </h2>
+                              
+                         </div>
+                         <div class="accordion-item mobile-list__item">
+                              <h2 class="accordion-header">
+                                   <button class="accordion-button accordion-button-empty collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        contacts
+                                   </button>
+                              </h2>
+                              
+                         </div>
+                         
+                         <div class="info-link mobile-list__item">
+                              <i class="bi bi-geo-alt"></i>
+                              <a>1a Bersona str., Minsk 220050, Republic of Belarus </a>
+                         </div>
+                         <div class="info-link mobile-list__item">
+                              <i class="bi bi-envelope"></i>
+                              <a href="mailto:center@pmrb.gov.by">center@pmrb.gov.by</a>
+                         </div>
+                         <div class="info-link mobile-list__item">
+                              <i class="bi bi-telephone"></i>
+                              <a href="tel:8 (017) 200–12–25">8 (017) 200–12–25</a>
+                         </div>
+                         <div class="info-link mobile-list__item">
+                              <i class="bi bi-printer"></i>
+                              <a href="tel:8 (017) 222–40–96">8 (017) 222–40–96</a>
+                         </div>
+                    </div>
+               </div>
+          </nav>
+          <div class="overlay"></div>
+     </header>
+     <main>
+          <section class="container">
+               <div class="row">
+                    <div class="col-lg-6 d-flex my-2">
+                         <div class="row">
+                              <div class="col-lg-6 d-flex">
+                                   <a href="" class="adv-block">
+                                        <div class="adv-block__img">
+                                             <picture>
+                                                  <source media="(min-width: 960px)" srcset="./img/svg/adv-pic-1.svg">
+                                                  <img src="./img/png/adv-pic-1.png" alt="adv-pic">
+                                             </picture>
+                                        </div>
+                                        <div class="adv-block__text">Preparing of Drafts of legislative acts</div>
+                                   </a>
+                              </div>
+                              <div class="col-lg-6 d-flex mt-lg-0 mt-3">
+                                   <a href="" class="adv-block">
+                                        <div class="adv-block__img">
+                                             <picture>
+                                                  <source media="(min-width: 960px)" srcset="./img/svg/adv-pic-2.svg">
+                                                  <img src="./img/png/adv-pic-2.png" alt="adv-pic">
+                                             </picture>
+                                        </div>
+                                        <div class="adv-block__text">Methodological Guidance for the Preparation of Drafts legal acts</div>
+                                   </a>
+                              </div>
+                              <div class="col-lg-6 d-flex mt-lg-5 mt-3">
+                                   <a href="" class="adv-block">
+                                        <div class="adv-block__img">
+                                             <picture>
+                                                  <source media="(min-width: 960px)" srcset="./img/svg/adv-pic-3.svg">
+                                                  <img src="./img/png/adv-pic-3.png" alt="adv-pic">
+                                             </picture>
+                                        </div>
+                                        <div class="adv-block__text">Carrying out of scientific researches in the field of law</div>
+                                   </a>
+                              </div>
+                              <div class="col-lg-6 d-flex mt-lg-5 mt-3">
+                                   <a href="" class="adv-block">
+                                        <div class="adv-block__img">
+                                             <picture>
+                                                  <source media="(min-width: 960px)" srcset="./img/svg/adv-pic-4.svg">
+                                                  <img src="./img/png/adv-pic-4.png" alt="adv-pic">
+                                             </picture>
+                                        </div>
+                                        <div class="adv-block__text">Training of scientific researchers of higher level of proficiency through the post-graduate study</div>
+                                   </a>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="col-lg-6 d-flex my-2">
+                         <div class="dir-block ">
+                              <div class="d-flex flex-column justify-content-between">
+                                   <div class="dir-block__title">
+                                        Welcome to the site of the National Center Legislation and Legal Research of the Republic of Belarus!
+                                   </div>
+                                   <div>
+                                        <div class="dir-block__name">
+                                             Vadim Ipatov,
+                                        </div>
+                                        <div class="dir-block__sub">
+                                             Director of the National Center of Legislation and Legal Research
+                                        </div>
+                                   </div>
+                              </div>
+                              <div class="dir-block__img">
+                                   <img src="./img/png/dir.png" alt="Директор">
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="container">
+               <a href="" class="section-title section-title-empty">
+                    Contacts
+               </a>
+               <div class="row">
+                    <div class="col-lg-3 d-flex align-items-start">
+                         <div class="highlighter-left">
+                              <span class="d-block color-dark-gray">Аddress</span>
+                              <p class="fw-bold">
+                                   1a Bersona str., Minsk 220050, Republic of Belarus 
+                              </p>
+                         </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-start">
+                         <div class="highlighter-left">
+                              <span class="d-block color-dark-gray">Opening hours</span>
+                              <p class="fw-bold">
+                                   Mon.-Fri. from 9.00-18.00
+                              </p>
+                              <span class="d-block color-dark-gray">Break time</span>
+                              <p class="fw-bold">
+                                   from 13.00-14.00
+                              </p>
+                         </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-start">
+                         <div class="highlighter-left">
+                              <span class="d-block color-dark-gray">Phones</span>
+                              <a href="tel:8 (017) 200-12-25" class="d-block color-green fw-bold">
+                                   8 (017) 200-12-25
+                              </a>
+                              <a href="tel:8 (017) 222-40-96" class="d-block color-green fw-bold">
+                                   8 (017) 222-40-96 
+                                   <span class="color-dark-gray">(fax)</span>
+                              </a>
+                              <a href="tel:8 (017) 200-85-99 " class="d-block color-green fw-bold">
+                                   8 (017) 200-85-99 
+                                   <span class="color-dark-gray"><br>(postgraduate study)</span>
+                              </a>
+                         </div>
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-start">
+                         <div class="highlighter-left">
+                              <span class="d-block color-dark-gray">Email</span>
+                              <a href="mailto:center@pmrb.gov.by" class="d-block color-green fw-bold">
+                                   center@pmrb.gov.by
+                              </a>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <section class="container text-center">
+               <h1 class="h1 text-danger">Map will be here work in progress</h1>
+          </section>
+     </main>
+     <footer class="footer bg-green">
+          <div class="container ff-rubik color-white">
+               <div class="row justify-content-between">
+                    <div class="col-lg-3 my-2 order-2 order-md-1">
+                         <a href="#" class="">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                   <path d="M28 14.0857C28 6.30621 21.7323 0 14.0017 0C6.26772 0.00174978 0 6.30621 
+                                   0 14.0875C0 21.1164 5.11986 26.9431 11.811 28V18.1575H8.25897V14.0875H11.8145V10.9816C11.8145 
+                                   7.45232 13.9055 5.50306 17.1024 5.50306C18.6352 5.50306 20.2362 5.77778 
+                                   20.2362 5.77778V9.24234H18.4707C16.7332 9.24234 16.1907 10.329 16.1907 
+                                   11.4436V14.0857H20.0717L19.4523 18.1557H16.189V27.9983C22.8801 26.9414 
+                                   28 21.1146 28 14.0857Z" fill="#F8F7F7"/>
+                              </svg>
+                         </a>
+                         <a href="#" class="ms-2">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                   <path fill-rule="evenodd" clip-rule="evenodd" 
+                                   d="M14 28C21.732 28 28 21.732 28 14C28 6.268 21.732 0 
+                                   14 0C6.268 0 0 6.268 0 14C0 21.732 6.268 28 14 28ZM15.3746 
+                                   10.5298C14.9719 16.2718 16.1516 15.465 18.5797 10.5298C18.8366 
+                                   9.79808 19.0705 9.61104 19.648 9.67556H22.9502C23.576 9.68992 
+                                   23.6666 9.9392 23.4358 10.7192C22.5754 12.3538 21.987 13.1073 
+                                   21.0642 14.2892C20.9833 14.3927 20.8999 14.4995 20.8135 
+                                   14.6105C20.2261 15.3932 20.251 15.8111 21.1049 16.5087C22.1212 
+                                   17.3493 22.6108 17.9397 23.4358 19.0713C23.7708 19.7892 23.5854 
+                                   20.0487 22.9502 20.4H19.4538C18.6989 20.1614 18.0666 19.6396 16.5401 
+                                   17.9324C16.0214 17.6845 15.7807 17.6884 15.5689 18.312L15.3746 
+                                   19.6407C15.2222 20.1678 15.0221 20.2865 14.5977 20.4L13 20.3466C8.28916 
+                                   19.3734 6.4394 16.3189 3.62287 10.1498C3.54475 9.68416 3.64969 
+                                   9.53864 4.2056 9.58028H7.02216C7.68692 9.59624 7.89156 9.79656 
+                                   8.09052 10.3389C8.98572 12.5413 9.46768 13.1479 10.3243 14.1353C11.1013 
+                                   15.0309 11.3517 14.404 11.2956 13.4709C11.2956 13.4709 11.3927 11.0046 
+                                   11.2956 10.7192C11.2458 10.573 11.0686 10.5017 10.8554 10.4159C10.6524 
+                                   10.3342 10.4167 10.2394 10.2272 10.0542C9.83872 9.67456 10.6 9.2 11.0042 
+                                   9.2H14.5977C15.2456 9.2642 15.3124 9.69112 15.3746 10.5298Z" fill="#F8F7F7"/>
+                              </svg>
+                         </a>
+                    </div>
+                    
+                    <div class="col-lg-9 row my-2 justify-content-between me-0 order-md-2 order-1 align-items-center">
+                         <a href="#" class="footer-accent d-block text-start text-md-start text-uppercase fs-18 fw-medium color-white col-md-4">
+                              about the Center
+                         </a>
+                         <a href="#" class="footer-accent d-block text-start text-md-center text-uppercase fs-18 fw-medium color-white col-md-4">
+                              Activity
+                         </a>
+                         <a href="#" class="footer-accent d-block text-start text-md-end text-uppercase fs-18 fw-medium color-white col-md-4">
+                              International cooperation
+                         </a>
+                    </div>
+                    
+                    <div class="col-12 mt-md-5 mt-3 order-3">
+                         <hr class="d-block">
+                         <div class="d-flex flex-row justify-content-between flex-wrap align-items-center fs-14 fw-normal">
+                              <span class="d-block my-2">
+                                   © 2023, The National Center of Legislation and Legal Research of the Republic of Belarus
+                              </span>
+                              <span class="d-block my-2">
+                                   Website developed:&nbsp;«Information and Publishing Center for Taxes and Duties»
+                              </span>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </footer>
+     @@include('./html-comp/_script.html')
+</body>
+</html>
