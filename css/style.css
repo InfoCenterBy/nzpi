@@ -857,6 +857,10 @@ a.link-default {
   font-size: 0.75rem !important;
 }
 
+.fs-20 {
+  font-size: 1.25rem !important;
+}
+
 .ff-rubik {
   font-family: 'Rubik', sans-serif !important;
 }
@@ -3151,6 +3155,49 @@ ul.list-dot li::before {
 }
 
 @layer component {
+  .form-control {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--color-black);
+    background-color: var(--color-white-background);
+    border: 1px solid var(--color-light-gray);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  }
+  .form-control:focus {
+    color: var(--color-black);
+    background-color: var(--color-white-background);
+    border-color: var(--color-green);
+    -webkit-box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+            box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+  }
+  .form-control.is-invalid,
+  .was-validated .form-control:invalid {
+    border-color: #dc3545;
+  }
+  .form-check-input:checked {
+    background-color: var(--color-green);
+    border-color: var(--color-green);
+  }
+  .form-check-input:focus {
+    border-color: var(--color-green);
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+            box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+  }
+  .form-control.is-invalid,
+  .was-validated .form-control[type='date']:invalid {
+    background-position: right calc(0.375em + 1.5rem) center;
+  }
+}
+@layer component {
   .bg-green {
     background-color: var(--color-green);
   }
@@ -3168,6 +3215,12 @@ ul.list-dot li::before {
   }
   .color-dark-gray {
     color: var(--color-dark-gray);
+  }
+  .color-black {
+    color: var(--color-black);
+  }
+  .color-red {
+    color: #f50b0b;
   }
 }
 .lang-btn {
