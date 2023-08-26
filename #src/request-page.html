@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+     @@include('./html-comp/_head.html',{
+          "title":"Заявка участника",
+     })
+<body>
+     @@include('./html-comp/_header.html')
+     <main>
+          <section class="container">
+               <div class="breadcrumbs">
+                    <a href="./main.html">Главная</a>
+                    <a href="#">Заявка участника</a>
+               </div>
+          </section>
+          
+          <section class="container content-page managment-page">
+               <form class="row needs-validation" novalidate>
+                    <div class="col-lg-10">
+                         <h1 class="content-title">Заявка участника</h1>
+                         <div class="seminar-card mt-5">
+                              <div class="title-line">
+                                   <span>Актуальные вопросы работы с обращениями граждан и юридических лиц</span>
+                                   <div class="title-line__line"></div>
+                              </div>
+                              <p class="mt-3">
+                                   <span class="fw-500">Дата: </span>
+                                   <span class="ms-1">18 мая 2023 года</span>
+                              </p>
+                              <p>
+                                   <span class="fw-500">Время: </span>
+                                   <span class="ms-1">10.00 – 14.00</span>
+                              </p>
+                              <p>
+                                   <span class="fw-500">Место:</span>
+                                   <span class="ms-1">г. Минск, ул. Берсона, 1а</span>
+                              </p>
+                              <p>
+                                   <span class="fw-500">Стоимость участия:</span>
+                                   <span class="ms-1">90,00 белорусских рублей</span>
+                              </p>
+                         </div>
+                         <div class="highlighter-left mt-5">
+                              <span class="d-block color-green">Обратите внимание!</span>
+                              <p>
+                                   Заявка участника персонифицирована и заполняется на каждого участника отдельно!
+                              </p>
+                         </div>
+                         <div class="title-line mt-5">
+                              <span>1. Информация об участнике тематического семинара</span>
+                              <div class="title-line__line"></div>
+                         </div>
+                         <p class="mt-4">
+                              <strong>Будьте внимательны!</strong> Настоящая информация необходима для правильного оформления сертификата об обучении.
+                         </p>
+                         <span class="d-block fs-20 fw-bolder color-black mt-4">
+                              Данные участника семинара
+                         </span>
+                         <div class="bg-lightest-gray p-4 mt-3">
+                              <div class="row">
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="fioInp" class="form-label">
+                                             Фамилия, имя, отчество <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="text" 
+                                             class="form-control input-default" 
+                                             id="fioInp" 
+                                             placeholder="ФИО" 
+                                             required="">
+                                        <span class="fs-12 color-dark-gray">Полностью в именительном падеже</span>
+                                        <!-- <div class="valid-feedback">
+                                             Поле заполнено верно
+                                        </div> -->
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="fioInpBel" class="form-label">
+                                             Прозвішча, імя, імя па бацьку <span class="color-red">*</span>
+                                        </label>
+                                        <input type="text" class="form-control input-default" id="fioInpBel" placeholder="ПIБ" required="">
+                                        <span class="fs-12 color-dark-gray">Цалкам, у назоўным склоне</span>
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="telInp" class="form-label">
+                                             Контактный номер телефона участника <span class="color-red">*</span>
+                                        </label>
+                                        <input type="tel" class="form-control input-default" id="telInp" placeholder="8 (0__) _______" required="">
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="emailInp" class="form-label">
+                                             Адрес электронной почты, e-mail <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="email" 
+                                             class="form-control input-default" 
+                                             id="emailInp" 
+                                             placeholder="_@_._" 
+                                             pattern="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                             required="">
+                                        <span class="fs-12 color-dark-gray">
+                                             Необходим для направления учебных материалов, а также письма-напоминания о предстоящем тематическом семинаре
+                                        </span>
+                                   </div>
+                              </div>
+                         </div>
+                         <div class="title-line mt-5">
+                              <span>2. Информация, необходимая для корректного заполнения договора о платных услугах в сфере образования</span>
+                              <div class="title-line__line"></div>
+                         </div>
+                         <p class="mt-4">
+                              Типовая форма договора утверждена постановлением Министерства образования Республики Беларусь от 21 июля 2011 г. № 99.
+                         </p>
+                         <span class="d-block fs-20 fw-bolder color-black mt-4">
+                              Адрес регистрации участника
+                         </span>
+                         <div class="bg-lightest-gray p-4 mt-3">
+                              <label for="addressInp" class="form-label">
+                                   Адрес регистрации участника по месту жительства либо месту пребывания 
+                                   <span class="color-red">*</span>
+                              </label>
+                              <textarea 
+                                   class="form-control input-default" 
+                                   id="addressInp" 
+                                   placeholder="Адрес регистрации участника" 
+                                   required=""></textarea>
+                              <span class="fs-12 color-dark-gray">
+                                   Формат заполнения: название улицы, номер дома, номер 
+                                   корпуса, номер квартиры; название населенного пункта; 
+                                   название района; название области
+                              </span>
+                         </div>
+                         <span class="d-block fs-20 fw-bolder color-black mt-4">
+                              Данные о документе, удостоверяющем личность участника 
+                              <em class="fw-light">(далее - документ)</em>
+                         </span>
+                         <div class="bg-lightest-gray p-4 mt-3">
+                              <div class="row">
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="documentType1" class="form-label">
+                                             Вид документа
+                                             <span class="color-red">*</span>
+                                        </label>
+                                        <div class="form-check">
+                                             <input class="form-check-input" 
+                                             type="radio" 
+                                             name="documentType" 
+                                             id="documentType1"
+                                             required="">
+                                             <label class="form-check-label" for="documentType1">
+                                                  паспорт
+                                             </label>
+                                        </div>
+                                        <div class="form-check">
+                                             <input class="form-check-input" 
+                                             type="radio" 
+                                             name="documentType" 
+                                             id="documentType2">
+                                             <label class="form-check-label" for="documentType2">
+                                                  вид на жительство
+                                             </label>
+                                        </div>
+                                        <div class="form-check">
+                                             <input class="form-check-input" 
+                                             type="radio" 
+                                             name="documentType" 
+                                             id="documentType3">
+                                             <label class="form-check-label" for="documentType2">
+                                                  удостоверение беженца
+                                             </label>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="numDocInp" class="form-label">
+                                             Серия и номер документа <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="text" 
+                                             class="form-control input-default" 
+                                             id="numDocInp" 
+                                             placeholder="ХХ 0000000" 
+                                             required="">
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="dateInp" class="form-label">
+                                             Дата выдачи документа <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="date" 
+                                             class="form-control input-default" 
+                                             id="dateInp" 
+                                             placeholder="Выберите дату" 
+                                             required="">
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="nameDocInp" class="form-label">
+                                             Наименование государственного органа, выдавшего документ 
+                                             <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="text" 
+                                             class="form-control input-default" 
+                                             id="nameDocInp" 
+                                             placeholder="ХХ 0000000" 
+                                             required="">
+                                   </div>
+                              </div>
+                         </div>
+                         <span class="d-block fs-20 fw-bolder color-black mt-4">
+                              Сведения об организации
+                         </span>
+                         <div class="bg-lightest-gray p-4 mt-3">
+                              <div class="row g-3">
+                                   <div class="col-12">
+                                        <label for="nameOrgInp" class="form-label">
+                                             Полное наименование организации с полным указанием организационно-правовой формы
+                                             <span class="color-red">*</span>
+                                        </label>
+                                        <textarea 
+                                             class="form-control input-default" 
+                                             id="nameOrgInp" 
+                                             placeholder="Полное наименование организации" 
+                                             required=""></textarea>
+                                        <span class="fs-12 color-dark-gray">
+                                             НЕ допускается использование сокращений в указании 
+                                             организационно-правовой формы, т.е. НЕ допускается 
+                                             указание: ООО, ЗАО, ОДО, РУП и др.
+                                        </span>
+                                   </div>
+                                   <div class="col-12">
+                                        <label for="postAddressOrgInp" class="form-label">
+                                             Почтовый адрес организации
+                                             <span class="color-red">*</span>
+                                        </label>
+                                        <textarea 
+                                             class="form-control input-default" 
+                                             id="postAddressOrgInp" 
+                                             placeholder="Почтовый адрес" 
+                                             required=""></textarea>
+                                   </div>
+                                   <div class="col-12">
+                                        <label for="urAddressOrgInp" class="form-label">
+                                             Место нахождения (юридический адрес) организации
+                                             <span class="color-red">*</span>
+                                        </label>
+                                        <textarea 
+                                             class="form-control input-default" 
+                                             id="urAddressOrgInp" 
+                                             placeholder="Юридический адрес организации" 
+                                             required=""></textarea>
+                                        <span class="fs-12 color-dark-gray">
+                                             Формат заполнения: название улицы, номер дома, номер корпуса, 
+                                             номер помещения; название населенного пункта; название района; название области
+                                        </span>
+                                   </div>
+                              </div>
+                         </div>
+                         <span class="d-block fs-20 fw-bolder color-black mt-4">
+                              Сведения об организации
+                         </span>
+                         <div class="bg-lightest-gray p-4 mt-3">
+                              <div class="row">
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="addressInp" class="form-label">
+                                             Источник финансирования оплаты за участие в семинаре
+                                             <span class="color-red">*</span>
+                                        </label>
+                                        <div class="form-check">
+                                             <input class="form-check-input" 
+                                             type="radio" 
+                                             name="amountIncome" 
+                                             id="amountIncome1"
+                                             required="">
+                                             <label class="form-check-label" for="amountIncome1">
+                                                  за счет средств бюджета
+                                             </label>
+                                        </div>
+                                        <div class="form-check">
+                                             <input class="form-check-input" 
+                                             type="radio" 
+                                             name="amountIncome" 
+                                             id="amountIncome2">
+                                             <label class="form-check-label" for="amountIncome2">
+                                                  за счет собственных средств
+                                             </label>
+                                        </div>
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="bankNameInp" class="form-label">
+                                             Наименование банка, филиала банка <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="text" 
+                                             class="form-control input-default" 
+                                             id="bankNameInp" 
+                                             placeholder="Наименование банка, филиала банка" 
+                                             required="">
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="bikBankInp" class="form-label">
+                                             БИК банка <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="date" 
+                                             class="form-control input-default" 
+                                             id="bikBankInp" 
+                                             placeholder="БИК банка" 
+                                             required="">
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="unpOrgInp" class="form-label">
+                                             УНП организации плательщика
+                                             <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="text" 
+                                             class="form-control input-default" 
+                                             id="unpOrgInp" 
+                                             placeholder="УНП организации плательщика" 
+                                             required="">
+                                   </div>
+                                   <div class="col-lg-6 my-2 d-flex flex-column">
+                                        <label for="payInp" class="form-label">
+                                             Расчетный счет
+                                             <span class="color-red">*</span>
+                                        </label>
+                                        <input 
+                                             type="text" 
+                                             class="form-control input-default" 
+                                             id="payInp" 
+                                             placeholder="Расчетный счет" 
+                                             required="">
+                                        <span class="fs-12 color-dark-gray">
+                                             Следует указать счет с которого будет произведена 
+                                             оплата за участие в тематическом семинаре
+                                        </span>
+                                   </div>
+                              </div>
+                         </div>
+                         <span class="d-block fs-20 fw-bolder color-black mt-4">
+                              Контакты бухгалтерии
+                         </span>
+                         <div class="bg-lightest-gray p-4 mt-3">
+                              <label for="telBuhInp" class="form-label">
+                                   Номер телефона бухгалтерии организации <span class="color-red">*</span>
+                              </label>
+                              <input type="tel" class="form-control input-default" id="telBuhInp" placeholder="8 (0__) _______" required="">
+                         </div>
+                         
+                         <div class="form-check mt-5">
+                              <input class="form-check-input" type="checkbox" value="" id="policyAgree1">
+                              <label class="form-check-label" for="policyAgree1">
+                                   Я даю своё согласие на обработку персональных данных 
+                                   в соответствии с целью, предусмотренной частью первой раздела 
+                                   2 <span class="color-green">
+                                        Политики в отношении обработки персональных данных
+                                   </span>
+                              </label>
+                         </div>
+                         <h1 class="h1 text-danger"> Вариант без ссылки в лейбле</h1>
+                         <div class="form-check mt-5">
+                              <input class="form-check-input" type="checkbox" value="" id="policyAgree2">
+                              <p>
+                                   <label class="form-check-label d-inline" for="policyAgree2">
+                                        Я даю своё согласие на обработку персональных данных 
+                                        в соответствии с целью, предусмотренной частью первой раздела 
+                                        2 
+                                   </label>
+                                   <a href="#" class="color-green">
+                                        Политики в отношении обработки персональных данных
+                                   </a>
+                              </p>
+                              
+                         </div>
+                         <h1 class="h1 text-danger">Вариант со ссылкой отдельно от лейбла</h1>
+                         <button class="btn-default border-0 mt-5" type="submit">
+                              Отправить заявку на участие
+                         </button>
+                    </div>
+               </form>
+          </section>
+          <section class="container">
+               <div class="go-back mt-5">
+                    <hr>
+                    <div class="w-100">
+                         <a href="" class="go-back-link">
+                              Вернуться назад
+                         </a>
+                    </div>
+               </div>
+          </section>
+     </main>
+     <script>
+          (() => {
+               'use strict'
+
+               // Fetch all the forms we want to apply custom Bootstrap validation styles to
+               const forms = document.querySelectorAll('.needs-validation')
+
+               // Loop over them and prevent submission
+               Array.from(forms).forEach(form => {
+               form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+               }, false)
+               })
+               })()
+     </script>
+@@include('./html-comp/_footer.html')
+@@include('./html-comp/_script.html')
+</body>
+</html>
