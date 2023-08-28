@@ -1372,6 +1372,15 @@ ul.list-dot li::before {
   }
 }
 
+.link-default-2 {
+  color: var(--color-green);
+}
+@media (hover: hover) and (pointer: fine) {
+  .link-default-2:hover {
+    color: var(--color-dark-green);
+  }
+}
+
 @layer component {
   .accordion-item:first-of-type .accordion-button {
     border-top-left-radius: 0;
@@ -2920,6 +2929,11 @@ ul.list-dot li::before {
   top: 80%;
   height: 1px;
   z-index: -2;
+}
+@media (max-width: 1201px) {
+  .line-right {
+    display: none;
+  }
 }
 
 .line-bottom-first::after {
