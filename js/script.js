@@ -144,13 +144,3 @@ let sliderImg = new Swiper('.slider-img', {
           swiper: sliderImgPrev,
      },
 });
-
-// document.querySelectorAll('.nav-toggle').forEach((el) =>
-//      el.addEventListener('mouseover', () => {
-//           document.querySelector('body').style.overflow = 'hidden';
-//      })
-// );
-
-$('.nav-toggle').hover(function () {
-     document.querySelector('body').classList.toggle('overflow-hidden');
-});
