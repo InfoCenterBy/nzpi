@@ -402,6 +402,15 @@ ul.list-dot {
      }
 }
 
+.link-default-2{
+     color: var(--color-green);
+     @media #{$mouse-device} {
+          &:hover{
+               color: var(--color-dark-green);
+          }
+     }
+}
+
 @layer component{
      .accordion-item:first-of-type .accordion-button {
           border-top-left-radius: 0;
@@ -1406,6 +1415,9 @@ ul.list-dot {
           top: 80%;
           height: 1px;
           z-index: -2;
+     }
+     @media (max-width: 1201px) {
+          display: none;
      }
 }
 
