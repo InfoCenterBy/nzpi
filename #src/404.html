@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+     @@include('./html-comp/_head.html',{
+          "title":"Страница не найдена",
+     })
+<body>
+     @@include('./html-comp/_header.html')
+     <main>
+          <section class="container">
+               <div class="d-flex justify-content-center align-items-center text-center">
+                    <div>
+                         <h1 class="h1 color-green title-404" >Страница в разработке</h1>
+                         <p class="content-text mt-md-5 mt-3 ">Данная страница находится в разработке,<br> приносим извинения за доставленные неудобства.</p>
+                         <div class="d-flex justify-content-center mt-4">
+                              <a href="/" class="btn-default">
+                                   Перейти на главную
+                              </a>
+                         </div>
+                    </div>
+               </div>
+          </section>
+     </main>
+     @@include('./html-comp/_footer.html')
+     @@include('./html-comp/_script.html')
+</body>
+</html>
