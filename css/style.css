@@ -2018,6 +2018,41 @@ ul.list-dot li::before {
      object-fit: cover;
 }
 
+.swiper-news-new.swiper-news .swiper-slide-filter {
+  background: none;
+}
+
+.swiper-news-new .swiper-news__text {
+  position: relative;
+  z-index: 5;
+  top: -190px;
+  left: 0px;
+  color: var(--color-white-background);
+  font-family: 'Rubik', sans-serif;
+  max-width: 100%;
+  background-color: rgba(25, 135, 84, 0.6);
+  padding: 1.25rem 1.875rem 5rem;
+}
+.swiper-news-new .swiper-news__text span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.swiper-news-new .swiper-news__text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 650px) {
+  .swiper-news-new .swiper-news__text p {
+    font-size: 0.9375rem;
+  }
+}
+
 .resource-section .link-block {
   padding: 3.875rem 1.5rem 1.5rem 2rem;
 }
