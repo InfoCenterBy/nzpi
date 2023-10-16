@@ -275,3 +275,22 @@
 }
 
 @import './img-slider';
+
+.swiper-news-new.swiper-news .swiper-slide-filter{
+     background: none;
+}
+
+.swiper-news-new {
+     .swiper-news__text{
+          top: -190px;
+          left: 0px;
+          max-width: 100%;
+          background-color: rgba(25, 135, 84, 0.60);
+          padding: 1.25rem 1.875rem 5rem;
+          p{
+               @media #{$ui-mobile} {
+                    font-size: .9375rem;
+               }
+          }
+     }
+}
